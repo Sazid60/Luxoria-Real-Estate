@@ -5,6 +5,7 @@ import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
 import Profile from "../Pages/Profile/Profile";
 import Contact from "../Pages/Contact/Contact";
+import Agents from "../Pages/Agents/Agents";
 
 const router = createBrowserRouter([
     {
@@ -24,12 +25,20 @@ const router = createBrowserRouter([
             element: <Login></Login>,
         },
         {
-            path: "/contact",
-            element:<Contact></Contact>,
+            path: "/agents",
+            element:<Agents></Agents>,
         },
         {
             path: "/profile",
             element: <Profile></Profile>,
+        },
+        {
+            path: "/blogs",
+            element: <Profile></Profile>,
+        },
+        {
+            path: "/contact",
+            element: <Contact></Contact>,
         },
       ]
     },
