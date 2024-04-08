@@ -1,18 +1,18 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const links = <>
-        <li className="mr-2"><NavLink  to={"/"}>Home</NavLink></li>
-        <li className="mr-2"><NavLink  to={"/blogs"}>Blogs</NavLink></li>
-        <li className="mr-2"><NavLink to={"/contact"}>Contact</NavLink></li>
+        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/"}>Home</NavLink></li>
+        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/blogs"}>Blogs</NavLink></li>
+        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/contact"}>Contact</NavLink></li>
 
 
 
         {/* This will be private Protected This will stay and divert to login if no user*/}
-        <li className="mr-2"><NavLink to={"/agents"}>Agents</NavLink></li>
+        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/agents"}>Agents</NavLink></li>
 
         {/* This wil be protected routes  but this will appear after login*/}
-        <li className="mr-2"><NavLink to={"profile"}>Update Profile</NavLink></li>
+        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"profile"}>Update Profile</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -25,7 +25,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-3xl">Luxoria</a>
+                <Link to={"/"} className="btn btn-ghost text-3xl">Luxoria</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <NavLink className="btn btn-sm" to={"/login"}>Login</NavLink>
+                <NavLink className="btn btn-sm bg-[#E1B453] hover:bg-slate-500 text-white" to={"/login"}>Login</NavLink>
             </div>
         </div>
     );

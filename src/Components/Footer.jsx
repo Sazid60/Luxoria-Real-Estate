@@ -28,7 +28,7 @@ const Footer = () => {
                     <form className="mt-4 flex">
                         <input type="email" placeholder="Enter your email" className="w-full  border-gray-700 rounded-l-md py-2 px-3 text-sm text-gray-300 focus:outline-none focus:border-gray-500" />
                         <Link to={"/blogs"}>                       
-                         <button type="submit" className="bg-[#DAA520] hover:bg-slate-500 text-white font-semibold py-2 px-4 rounded-r-md">Subscribe</button>
+                         <button type="submit" className="bg-[#E1B453] hover:bg-slate-500 text-white font-semibold py-2 px-4 rounded-r-md">Subscribe</button>
                          </Link>
                     </form>
                 </div>
