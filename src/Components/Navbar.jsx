@@ -4,15 +4,16 @@ const Navbar = () => {
     const links = <>
         <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/"}>Home</NavLink></li>
         <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/blogs"}>Blogs</NavLink></li>
-        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/contact"}>Contact</NavLink></li>
+
 
 
 
         {/* This will be private Protected This will stay and divert to login if no user*/}
         <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/agents"}>Agents</NavLink></li>
+        
+        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/contact"}>Contact</NavLink></li>
 
         {/* This wil be protected routes  but this will appear after login*/}
-        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"profile"}>Update Profile</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -34,6 +35,10 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 <NavLink className="btn btn-sm bg-[#E1B453] hover:bg-slate-500 text-white" to={"/login"}>Login</NavLink>
+                <NavLink className="btn btn-sm bg-[#E1B453] hover:bg-slate-500 text-white" to={"/register"}>Register</NavLink>
+                
+                {/* If User Available */}
+                <NavLink className="btn btn-sm btn-ghost  " to={"profile"}>Profile</NavLink>
             </div>
         </div>
     );
