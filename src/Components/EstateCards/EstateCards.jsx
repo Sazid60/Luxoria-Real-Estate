@@ -2,6 +2,7 @@
 import { CiBadgeDollar, CiLocationOn } from "react-icons/ci";
 
 import { TbRulerMeasure } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const EstateCards = () => {
     return (
@@ -30,7 +31,9 @@ const EstateCards = () => {
                         <p className="border border-[#E1B453] p-1 rounded-sm text-xs ">Backyard</p>
                     </div>
                     <div className="card-actions w-full">
-                        <button className="btn bg-[#E1B453] w-full text-white text-xs btn-sm mt-2">View Details</button>
+                        <Link className="w-full" to={`/estate-details/1`}>
+                            <button className="btn bg-[#E1B453] w-full text-white text-xs btn-sm mt-2">View Details</button>
+                        </Link>
                     </div>
                 </div>
             </div>

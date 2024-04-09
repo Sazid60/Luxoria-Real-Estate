@@ -7,6 +7,7 @@ import Profile from "../Pages/Profile/Profile";
 import Contact from "../Pages/Contact/Contact";
 import Agents from "../Pages/Agents/Agents";
 import Blogs from "../Pages/Blogs/Blogs";
+import DetailEstate from "../Pages/DetailEstate/DetailEstate";
 
 const router = createBrowserRouter([
     {
@@ -16,10 +17,16 @@ const router = createBrowserRouter([
         {
             path: "/",
             element: <Home></Home>,
+            loader : ()=> fetch('/estate.json')
         },
         {
             path: "/register",
             element: <Register></Register>,
+        },
+        {
+            path: "/estate-details/:id",
+            element: <DetailEstate></DetailEstate>,
+            loader : ()=> fetch('/estate.json')
         },
         {
             path: "/login",
