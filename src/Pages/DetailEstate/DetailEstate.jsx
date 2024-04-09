@@ -19,7 +19,7 @@ const DetailEstate = () => {
         }
     }, [id, estateData]);
 
-    console.log(singleCard);
+    // console.log(singleCard);
     const { image, estate_title, segment, description, price, status, area, location, facilities } = singleCard
 
     return (

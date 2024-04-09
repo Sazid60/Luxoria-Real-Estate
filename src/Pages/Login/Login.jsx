@@ -51,11 +51,10 @@ const Login = () => {
                             <p className="text-gray-700 text-sm">Do Not Have Account ? <Link className="text-blue-600 font-semibold" to={"/register"}>Register</Link> </p>
                         </div>
                     </form>
+                    <div className="divider text-gray-700">Continue With</div>
                     <div className="flex justify-center gap-4 lg:gap-7 mb-6 pb-0">
-                        <button className="btn rounded-full" ><FaGoogle /></button>
-                        <button className="btn rounded-full" ><FaGithub /></button>
-                        <button className="btn rounded-full" ><FaTwitter /></button>
-                        <button className="btn rounded-full" ><FaFacebook /></button>
+                        <button className="btn rounded-full" ><FaGoogle />Google</button>
+                        <button className="btn rounded-full" ><FaGithub />GitHub</button>
                     </div>
                 </div>
             </div>

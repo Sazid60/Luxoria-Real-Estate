@@ -1,23 +1,49 @@
-import { useState } from "react";
-import { FaFacebook, FaGithub, FaGoogle, FaTwitter } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { FaGithub, FaGoogle } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
+import toast from 'react-hot-toast';
 
 const Register = () => {
 
     const [success, setSuccess] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
+
+    const { createUser, updateUser } = useContext(AuthContext)
+    // console.log(createUser)
+
+    const navigate = useNavigate()
+
+
     const handleRegister = (e) => {
         e.preventDefault()
         const form = new FormData(e.currentTarget)
         const email = form.get("email")
         const password = form.get("password")
         const name = form.get("name")
-        const photoURL = form.get("photoUrl")
-        console.log(email, password,photoURL,name)
+        const photoUrl = form.get("photoUrl")
+        // console.log(email, password,photoURL,name)
         setSuccess("")
         setErrorMessage("")
-        console.log(email,password)
+
+        createUser(email, password)
+            .then((result) => {
+                updateUser(name, photoUrl)
+                    .then(() => {
+                        toast.success('Registration Successful.');
+                        setSuccess("Successfully Registered ")
+                        navigate("/")
+                        console.log(result.user)
+                    })
+                    .catch(error=>{
+                        console.log(error)
+                    })
+            })
+            .catch(error => {
+                setErrorMessage(error.message)
+                // console.log(error.message)
+            })
     }
     return (
         <div className="hero w-full lg:mb-4 ">
@@ -52,10 +78,10 @@ const Register = () => {
                             </label>
                             <input type="password" placeholder="Password" name="password" className="input input-bordered text-gray-700 bg-transparent border-gray-300 " required />
                             {
-                                errorMessage && <p className='text-red-500 text-xs mt-4'>Error :{errorMessage} </p>
+                                errorMessage && <p className='text-red-500 text-sm mt-4'>Error :{errorMessage} </p>
                             }
                             {
-                                success && <p className='text-blue-700 text-xs mt-4'>{success}</p>
+                                success && <p className='text-blue-700 text-sm mt-4'>{success}</p>
                             }
                         </div>
                         <div className="form-control mt-2">
@@ -67,10 +93,8 @@ const Register = () => {
                     </form>
                     <div className="divider text-gray-700">Continue With</div>
                     <div className="flex justify-center gap-4 lg:gap-7 mb-6 pb-0">
-                        <button className="btn rounded-full" ><FaGoogle /></button>
-                        <button className="btn rounded-full" ><FaGithub /></button>
-                        <button className="btn rounded-full" ><FaTwitter /></button>
-                        <button className="btn rounded-full" ><FaFacebook /></button>
+                        <button className="btn rounded-full" ><FaGoogle />Google</button>
+                        <button className="btn rounded-full" ><FaGithub />GitHub</button>
                     </div>
                 </div>
             </div>
