@@ -1,75 +1,74 @@
 [
-    {
-      "id": 1,
-      "image": "https://example.com/single_family_home.jpg",
-      "estate_title": "Majestic Manor",
-      "segment": "Single-family homes",
-      "description": "Experience grandeur and comfort in this palatial single-family home.",
-      "price": "$500,000",
-      "status": "For Sale",
-      "area": "5000 SQFT",
-      "location": "Gulshan, Dhaka",
-      "facilities": ["Swimming Pool", "Home Theater", "Gourmet Kitchen", "5 Bedrooms", "4 Bathrooms"]
-    },
-    {
-      "id": 2,
-      "image": "https://example.com/townhouse.jpg",
-      "estate_title": "Elegant Terrace Residence",
-      "segment": "Townhouses",
-      "description": "Sophisticated living awaits in this luxurious townhouse with a private terrace.",
-      "price": "$2,500/month",
-      "status": "For Rent",
-      "area": "3000 SQFT",
-      "location": "Banani, Dhaka",
-      "facilities": ["Private Elevator", "Rooftop Garden", "Fitness Center", "3 Bedrooms", "2 Bathrooms"]
-    },
-    {
-      "id": 3,
-      "image": "https://example.com/luxury_apartment.jpg",
-      "estate_title": "Prestigious Sky Residence",
-      "segment": "Apartments",
-      "description": "Indulge in luxury living with breathtaking views from this exquisite sky residence.",
-      "price": "$700,000",
-      "status": "For Sale",
-      "area": "2000 SQFT",
-      "location": "Dhanmondi, Dhaka",
-      "facilities": ["Concierge Service", "Infinity Pool", "Spa", "3 Bedrooms", "2 Bathrooms"]
-    },
-    {
-      "id": 4,
-      "image": "https://example.com/student_housing.jpg",
-      "estate_title": "Premier Student Sanctuary",
-      "segment": "Student housing",
-      "description": "Live and study in style at this premier student housing community designed for academic success.",
-      "price": "$1,200/month",
-      "status": "For Rent",
-      "area": "1500 SQFT",
-      "location": "Uttara, Dhaka",
-      "facilities": ["Study Lounge", "Game Room", "Fitness Center", "2 Bedrooms", "1 Bathroom"]
-    },
-    {
-      "id": 5,
-      "image": "https://example.com/senior_living.jpg",
-      "estate_title": "Tranquil Eldercare Retreat",
-      "segment": "Senior living communities",
-      "description": "Retire in style and tranquility at this serene eldercare retreat offering resort-like amenities.",
-      "price": "$800,000",
-      "status": "For Sale",
-      "area": "4000 SQFT",
-      "location": "Mirpur, Dhaka",
-      "facilities": ["Gated Community", "Walking Trails", "Community Center", "2 Bedrooms", "2 Bathrooms"]
-    },
-    {
-      "id": 6,
-      "image": "https://example.com/vacation_rental.jpg",
-      "estate_title": "Exclusive Beachfront Villa",
-      "segment": "Vacation rentals",
-      "description": "Escape to paradise in this exclusive beachfront villa offering unparalleled luxury and relaxation.",
-      "price": "$300/night",
-      "status": "For Rent",
-      "area": "2500 SQFT",
-      "location": "Cox's Bazar, Bangladesh",
-      "facilities": ["Private Beach Access", "Infinity Pool", "Chef's Kitchen", "3 Bedrooms", "3 Bathrooms"]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/MGZSPrY/06.jpg",
+    "estate_title": "Majestic Manor",
+    "segment": "Single Family Homes",
+    "description": "Step into a world of opulence and tranquility with Majestic Manor, a palatial single-family home that redefines luxury living. Spread across a sprawling 5000 square feet, this residence offers an unparalleled blend of grandeur and comfort. From the moment you enter, you'll be captivated by the majestic interiors and exquisite craftsmanship. Enjoy the finest amenities including an infinity pool, home theater, gourmet kitchen, five bedrooms, and four bathrooms. Located in the prestigious area of Gulshan, Dhaka, Majestic Manor is more than just a home; it's a statement of sophistication and elegance.",
+    "price": "$500,000",
+    "status": "For Sale",
+    "area": "5000 SQFT",
+    "location": "Gulshan, Dhaka",
+    "facilities": ["Infinity Pool", "Home Theater", "Gourmet Kitchen", "5 Bedrooms", "4 Bathrooms"]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/sbHRYf9/02.jpg",
+    "estate_title": "Elegant Terrace Residence",
+    "segment": "Town Houses",
+    "description": "Discover sophisticated living at its finest in the heart of Banani, Dhaka, with the Elegant Terrace Residence. This luxurious townhouse epitomizes elegance and style, offering a perfect blend of modern amenities and timeless design. Spanning 3000 square feet, this residence boasts a private terrace, perfect for entertaining or enjoying quiet evenings under the stars. With features like a private elevator, rooftop garden, fitness center, three bedrooms, and two bathrooms, every aspect of this residence exudes luxury and comfort.",
+    "price": "$2,500/month",
+    "status": "For Rent",
+    "area": "3000 SQFT",
+    "location": "Banani, Dhaka",
+    "facilities": ["Private Elevator", "Rooftop Garden", "Fitness Center", "3 Bedrooms", "2 Bathrooms"]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/3M1XjqD/03.jpg",
+    "estate_title": "Prestigious Sky Residence",
+    "segment": "Apartments",
+    "description": "Elevate your lifestyle to new heights with the Prestigious Sky Residence in the vibrant neighborhood of Dhanmondi, Dhaka. Perched high above the city skyline, this exquisite apartment offers breathtaking views and unparalleled luxury. Boasting 2000 square feet of living space, this residence features concierge service, an infinity pool, spa facilities, three bedrooms, and two bathrooms. Whether you're relaxing in the lap of luxury or entertaining guests in style, this sky residence offers a lifestyle of indulgence and sophistication.",
+    "price": "$700,000",
+    "status": "For Sale",
+    "area": "2000 SQFT",
+    "location": "Dhanmondi, Dhaka",
+    "facilities": ["Concierge Service", "Infinity Pool", "Spa", "3 Bedrooms", "2 Bathrooms"]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/1v9wJ6m/01.jpg",
+    "estate_title": "Premier Student Sanctuary",
+    "segment": "Student Housing",
+    "description": "Experience the ultimate blend of comfort and convenience at the Premier Student Sanctuary in the bustling area of Uttara, Dhaka. Designed with the needs of today's students in mind, this premier housing community offers a conducive environment for academic success. With a study lounge, game room, fitness center, two bedrooms, and one bathroom, this residence provides everything you need to thrive during your academic journey. Embrace a lifestyle of learning and leisure at this premier student sanctuary.",
+    "price": "$1,200/month",
+    "status": "For Rent",
+    "area": "1500 SQFT",
+    "location": "Uttara, Dhaka",
+    "facilities": ["Study Lounge", "Game Room", "Fitness Center", "2 Bedrooms", "1 Bathroom"]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/x1nGY7x/05.jpg",
+    "estate_title": "Tranquil Eldercare Retreat",
+    "segment": "Senior Living Communities",
+    "description": "Embrace a life of tranquility and relaxation at the Tranquil Eldercare Retreat in the serene neighborhood of Mirpur, Dhaka. Designed for discerning seniors seeking resort-like amenities and personalized care, this retreat offers a peaceful haven away from the hustle and bustle of city life. With features such as a nearby mosque, walking trails, high-security measures, two bedrooms, and two bathrooms, residents can enjoy a fulfilling and enriching lifestyle surrounded by nature and community.",
+    "price": "$800,000",
+    "status": "For Sale",
+    "area": "4000 SQFT",
+    "location": "Mirpur, Dhaka",
+    "facilities": ["Mosque Nearby", "Walking Trails", "High Security", "2 Bedrooms", "2 Bathrooms"]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/8XVy1DB/04.jpg",
+    "estate_title": "Exclusive Beachfront Villa",
+    "segment": "Vacation Rentals",
+    "description": "Experience paradise like never before with the Exclusive Beachfront Villa nestled in the pristine coastal town of Cox's Bazar, Bangladesh. Escape the ordinary and indulge in unparalleled luxury and relaxation in this exquisite villa boasting 2500 square feet of lavish living space. With a private beach, infinity pool, chef's kitchen, three bedrooms, and three bathrooms, every aspect of this villa is designed to exceed your expectations. Whether you're seeking adventure or simply want to unwind in style, this beachfront oasis offers an unforgettable retreat experience.",
+    "price": "$300/night",
+    "status": "For Rent",
+    "area": "2500 SQFT",
+    "location": "Cox's Bazar, Bangladesh",
+    "facilities": ["Private Beach", "Infinity Pool", "Chef's Kitchen", "3 Bedrooms", "3 Bathrooms"]
+  }
+]
