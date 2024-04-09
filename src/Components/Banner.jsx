@@ -18,7 +18,7 @@ const Banner = () => {
                 <div className='absolute inset-0 flex flex-col z-10 translate-x-4 md:translate-x-16 lg:translate-x-16 translate-y-8 md:translate-y-16 lg:translate-y-16 w-[70%] h-[70%]'>
                     <h1 className='font-bold text-3xl md:text-4xl lg:text-6xl text-white mb-6'>Discover Your <br /> New <span className='text-[#E1B453]'>Home</span></h1>
                     <TypeAnimation className='text-white text-xl md:text-2xl lg:text-4xl font-semibold'
-                        sequence={['Single-Family', 600, ' Town-Houses', 600, 'Apartments', 600, 'Student-Housing', 600, 'Senior-Living-Communities', 600, 'Vacation-Rentals', 600]}
+                        sequence={['Single-Family', 3000, ' Town-Houses', 3000, 'Apartments', 3000, 'Student-Housing', 3000, 'Senior-Living-Communities', 3000, 'Vacation-Rentals', 3000]}
                         // style={{ fontSize: '2em', fontWeight:700, color:"white" }}
                         repeat={Infinity}
                     />
@@ -29,7 +29,7 @@ const Banner = () => {
                         spaceBetween={0}
                         centeredSlides={true}
                         autoplay={{
-                            delay: 2500,
+                            delay: 2000,
                             disableOnInteraction: false,
                         }}
                         modules={[Autoplay]}

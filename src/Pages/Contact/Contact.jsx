@@ -32,19 +32,27 @@ const Contact = () => {
             <div className="w-full">
                 <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
                     <h2 className="text-2xl font-semibold sm:text-4xl text-center">Frequently Asked Questions</h2>
-                    <p className="mt-4 mb-8 text-center">Here are some common questions about purchasing and reading our books.</p>
+                    <p className="mt-4 mb-8 text-center">Explore common inquiries about our real estate services.</p>
                     <div className="space-y-4">
-                        <details className="w-full rounded-lg border border-black">
-                            <summary className="px-4 py-6 focus:outline-none focus-visible:ring-violet-400">How can I purchase a book?</summary>
-                            <p className="px-4 py-6 pt-0 ml-4 -mt-4">You can purchase our books through our website or from major online retailers such as Amazon and Barnes & Noble.</p>
+                        <details className="w-full rounded-lg border border-gray-300">
+                            <summary className="px-4 py-6 focus:outline-none focus-visible:ring-blue-400 cursor-pointer">How do I find properties listed on your website?</summary>
+                            <p className="px-4 py-6 pt-0 ml-4 -mt-4">You can browse our listings directly on our website. Simply use the search bar or filters to narrow down your preferences and find properties that match your criteria.</p>
                         </details>
-                        <details className="w-full  rounded-lg border border-black">
-                            <summary className="px-4 py-6 focus:outline-none focus-visible:ring-violet-400">Do you offer digital versions of your books?</summary>
-                            <p className="px-4 py-6 pt-0 ml-4 -mt-4">Yes, we offer e-book versions of most of our titles. You can find them available for purchase on various e-book platforms.</p>
+                        <details className="w-full rounded-lg border border-gray-300">
+                            <summary className="px-4 py-6 focus:outline-none focus-visible:ring-blue-400 cursor-pointer">Are there virtual tours available for properties?</summary>
+                            <p className="px-4 py-6 pt-0 ml-4 -mt-4">Yes, many of our property listings include virtual tours. You can explore the interior and exterior of the properties from the comfort of your own home.</p>
                         </details>
-                        <details className="w-full border rounded-lg border-black">
-                            <summary className="px-4 py-6 focus:outline-none focus-visible:ring-violet-400">What if I have a problem with my order?</summary>
-                            <p className="px-4 py-6 pt-0 ml-4 -mt-4">If you encounter any issues with your order, please contact our customer support team. We'll be happy to assist you and resolve any problems.</p>
+                        <details className="w-full rounded-lg border border-gray-300">
+                            <summary className="px-4 py-6 focus:outline-none focus-visible:ring-blue-400 cursor-pointer">What financing options are available for purchasing a property?</summary>
+                            <p className="px-4 py-6 pt-0 ml-4 -mt-4">We work with various lenders to offer financing options tailored to your needs. Whether you're a first-time buyer or an experienced investor, we can help you find the right loan for your property purchase.</p>
+                        </details>
+                        <details className="w-full rounded-lg border border-gray-300">
+                            <summary className="px-4 py-6 focus:outline-none focus-visible:ring-blue-400 cursor-pointer">How can I schedule a viewing of a property?</summary>
+                            <p className="px-4 py-6 pt-0 ml-4 -mt-4">To schedule a viewing of a property, simply contact our team and let us know which listing you're interested in. We'll work with you to arrange a convenient time for a viewing.</p>
+                        </details>
+                        <details className="w-full rounded-lg border border-gray-300">
+                            <summary className="px-4 py-6 focus:outline-none focus-visible:ring-blue-400 cursor-pointer">Do you provide assistance for selling my property?</summary>
+                            <p className="px-4 py-6 pt-0 ml-4 -mt-4">Yes, we offer comprehensive services for selling your property. From staging and marketing to negotiating offers, our experienced team will guide you through the selling process from start to finish.</p>
                         </details>
                     </div>
                 </div>
