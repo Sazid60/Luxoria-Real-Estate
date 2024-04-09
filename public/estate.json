@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "image": "https://example.com/single_family_home.jpg",
+      "estate_title": "Majestic Manor",
+      "segment": "Single-family homes",
+      "description": "Experience grandeur and comfort in this palatial single-family home.",
+      "price": "$500,000",
+      "status": "For Sale",
+      "area": "5000 SQFT",
+      "location": "Gulshan, Dhaka",
+      "facilities": ["Swimming Pool", "Home Theater", "Gourmet Kitchen", "5 Bedrooms", "4 Bathrooms"]
+    },
+    {
+      "id": 2,
+      "image": "https://example.com/townhouse.jpg",
+      "estate_title": "Elegant Terrace Residence",
+      "segment": "Townhouses",
+      "description": "Sophisticated living awaits in this luxurious townhouse with a private terrace.",
+      "price": "$2,500/month",
+      "status": "For Rent",
+      "area": "3000 SQFT",
+      "location": "Banani, Dhaka",
+      "facilities": ["Private Elevator", "Rooftop Garden", "Fitness Center", "3 Bedrooms", "2 Bathrooms"]
+    },
+    {
+      "id": 3,
+      "image": "https://example.com/luxury_apartment.jpg",
+      "estate_title": "Prestigious Sky Residence",
+      "segment": "Apartments",
+      "description": "Indulge in luxury living with breathtaking views from this exquisite sky residence.",
+      "price": "$700,000",
+      "status": "For Sale",
+      "area": "2000 SQFT",
+      "location": "Dhanmondi, Dhaka",
+      "facilities": ["Concierge Service", "Infinity Pool", "Spa", "3 Bedrooms", "2 Bathrooms"]
+    },
+    {
+      "id": 4,
+      "image": "https://example.com/student_housing.jpg",
+      "estate_title": "Premier Student Sanctuary",
+      "segment": "Student housing",
+      "description": "Live and study in style at this premier student housing community designed for academic success.",
+      "price": "$1,200/month",
+      "status": "For Rent",
+      "area": "1500 SQFT",
+      "location": "Uttara, Dhaka",
+      "facilities": ["Study Lounge", "Game Room", "Fitness Center", "2 Bedrooms", "1 Bathroom"]
+    },
+    {
+      "id": 5,
+      "image": "https://example.com/senior_living.jpg",
+      "estate_title": "Tranquil Eldercare Retreat",
+      "segment": "Senior living communities",
+      "description": "Retire in style and tranquility at this serene eldercare retreat offering resort-like amenities.",
+      "price": "$800,000",
+      "status": "For Sale",
+      "area": "4000 SQFT",
+      "location": "Mirpur, Dhaka",
+      "facilities": ["Gated Community", "Walking Trails", "Community Center", "2 Bedrooms", "2 Bathrooms"]
+    },
+    {
+      "id": 6,
+      "image": "https://example.com/vacation_rental.jpg",
+      "estate_title": "Exclusive Beachfront Villa",
+      "segment": "Vacation rentals",
+      "description": "Escape to paradise in this exclusive beachfront villa offering unparalleled luxury and relaxation.",
+      "price": "$300/night",
+      "status": "For Rent",
+      "area": "2500 SQFT",
+      "location": "Cox's Bazar, Bangladesh",
+      "facilities": ["Private Beach Access", "Infinity Pool", "Chef's Kitchen", "3 Bedrooms", "3 Bathrooms"]
+    }
+  ]
+  
