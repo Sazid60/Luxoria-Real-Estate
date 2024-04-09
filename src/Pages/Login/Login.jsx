@@ -19,7 +19,7 @@ const Login = () => {
         console.log(email, password)
     }
     return (
-        <div className="hero lg:mb-4 ">
+        <div className="lg:mb-4 ">
             <div className="hero-content flex-col w-full">
                 <div className="text-center">
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold ">Login now!</h1>

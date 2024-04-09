@@ -46,7 +46,7 @@ const Register = () => {
             })
     }
     return (
-        <div className="hero w-full lg:mb-4 ">
+        <div className="w-full lg:mb-4 ">
             <div className="hero-content flex-col w-full">
 
                 <div className="text-center">

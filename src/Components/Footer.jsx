@@ -5,7 +5,7 @@ const Footer = () => {
     return (
 
         <footer className="bg-slate-950 text-gray-300 py-8">
-            <div className="container mx-auto flex flex-wrap justify-around px-6">
+            <div className="container mx-auto flex flex-col md:flex-row lg:flex-row justify-around px-6">
                 <div className="w-full md:w-1/2 lg:w-1/4 mb-6 md:mb-0">
                     <h3 className="text-xl font-bold mb-4">Contact Us</h3>
                     <p>Shahjalal Avenue</p>
