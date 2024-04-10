@@ -1,11 +1,11 @@
 import { useContext, useState } from "react";
-import { FaGithub, FaGoogle} from "react-icons/fa";
+import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import toast from 'react-hot-toast';
 
 const Login = () => {
-    const { createUser, updateUser,signInUser } = useContext(AuthContext)
+    const {user, signInUser } = useContext(AuthContext)
 
     const [success, setSuccess] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
@@ -15,18 +15,25 @@ const Login = () => {
         const form = new FormData(e.currentTarget)
         const email = form.get("email")
         const password = form.get("password")
+
         setSuccess("")
         setErrorMessage("")
 
-        signInUser(email,password)
-        .then(()=>{
-            toast.success('Login Successful');
-            setSuccess("Successfully Logged in")
-        })
-        .catch(error=>{
-            setErrorMessage(error.message)
-            toast.error(error.message)
-        })
+        signInUser(email, password)
+            .then(() => {
+                if (!user) {
+                    toast.success('Login Successful');
+                    setSuccess("Successfully Logged In")
+                }
+                else{
+                    toast.error('Already Logged In');
+                    setErrorMessage("Already Logged In")
+                }
+            })
+            .catch(error => {
+                setErrorMessage(error.message)
+                toast.error(error.message)
+            })
 
         // console.log(email, password)
     }
