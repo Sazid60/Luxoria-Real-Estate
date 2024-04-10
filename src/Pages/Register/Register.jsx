@@ -10,7 +10,7 @@ const Register = () => {
     const [success, setSuccess] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
 
-    const { createUser, updateUser,googleSignIn,gitHubSignIn } = useContext(AuthContext)
+    const { createUser, updateUser, googleSignIn, gitHubSignIn, user } = useContext(AuthContext)
     // console.log(createUser)
 
     const navigate = useNavigate()
@@ -64,7 +64,19 @@ const Register = () => {
 
         socialProvider()
             .then(() => {
-                toast.success('Registered Successful')
+                if (!user) {
+                    toast.success('Registration Successful')
+                    setSuccess("Successfully Registered ")
+                    navigate("/")
+                }
+                else{
+                    toast.error('Already User Created');
+                    setErrorMessage("Already User Created")
+                }
+            })
+            .catch((error) => {
+                setErrorMessage(error.message)
+                toast.error(error.message)
             })
     }
     return (
@@ -115,7 +127,7 @@ const Register = () => {
                     </form>
                     <div className="divider text-gray-700">Continue With</div>
                     <div className="flex justify-center gap-4 lg:gap-7 mb-6 pb-0">
-                        <button className="btn rounded-full" onClick={() => handleSocialLogin(googleSignIn)}><FaGoogle className="text-2xl text-[#DB4437]"/>Google</button>
+                        <button className="btn rounded-full" onClick={() => handleSocialLogin(googleSignIn)}><FaGoogle className="text-2xl text-[#DB4437]" />Google</button>
                         <button className="btn rounded-full" onClick={() => handleSocialLogin(gitHubSignIn)}><FaGithub className="text-3xl bg-black text-white rounded-full border border-white" />Github</button>
                     </div>
                 </div>

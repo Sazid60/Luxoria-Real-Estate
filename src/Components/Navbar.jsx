@@ -56,7 +56,7 @@ const Navbar = () => {
                     user ?
                         <div className="flex items-center gap-2 md:gap-2 lg:gap-4">
                             <div className="tooltip tooltip-left" data-tip={user.displayName}>
-                                <img className="rounded-full h-10 w-10" src={user.photoURL} alt="" />
+                                <Link to={"/profile"}><img className="rounded-full h-10 w-10" src={user.photoURL} alt="" /></Link>
                             </div>
                             <button className="btn btn-sm bg-[#E1B453] hover:bg-slate-500 text-white"
                                 onClick={handleSignOut}>Sign out</button>
@@ -66,7 +66,7 @@ const Navbar = () => {
                         </div>
                         : <div className="flex items-center gap-2 md:gap-2 lg:gap-4">
                             <div className="tooltip tooltip-left" data-tip="No User Found">
-                                <img className="rounded-full h-10 w-10" src="/Capture.PNG" alt="" />
+                                <img className="rounded-full h-9 w-9" src="/Capture.PNG" alt="" />
                             </div>
                             <div className="flex">
                                 <NavLink

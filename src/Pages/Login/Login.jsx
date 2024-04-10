@@ -5,7 +5,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import toast from 'react-hot-toast';
 
 const Login = () => {
-    const { user, signInUser,googleSignIn, gitHubSignIn} = useContext(AuthContext)
+    const { user, signInUser, googleSignIn, gitHubSignIn } = useContext(AuthContext)
 
     const [success, setSuccess] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
@@ -39,9 +39,15 @@ const Login = () => {
     const handleSocialLogin = (socialProvider) => {
 
         socialProvider()
-            .then(()=>{
+            .then(() => {
                 toast.success('Login Successful')
+                setSuccess("Successfully Logged In")
             })
+            .catch((error) => {
+                setErrorMessage(error.message)
+                toast.error(error.message)
+            })
+
     }
 
     return (
@@ -79,7 +85,7 @@ const Login = () => {
                     </form>
                     <div className="divider text-gray-700">Continue With</div>
                     <div className="flex justify-center gap-4 lg:gap-7 mb-6 pb-0">
-                        <button className="btn rounded-full" onClick={() => handleSocialLogin(googleSignIn)}><FaGoogle className="text-2xl text-[#DB4437]"/>Google</button>
+                        <button className="btn rounded-full" onClick={() => handleSocialLogin(googleSignIn)}><FaGoogle className="text-2xl text-[#DB4437]" />Google</button>
                         <button className="btn rounded-full" onClick={() => handleSocialLogin(gitHubSignIn)}><FaGithub className="text-3xl bg-black text-white rounded-full border border-white" />Github</button>
                     </div>
                 </div>
