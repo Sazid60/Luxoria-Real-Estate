@@ -1,8 +1,11 @@
-import { useState } from "react";
-import { FaFacebook, FaGithub, FaGoogle, FaTwitter } from "react-icons/fa";
+import { useContext, useState } from "react";
+import { FaGithub, FaGoogle} from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import toast from 'react-hot-toast';
 
 const Login = () => {
+    const { createUser, updateUser,signInUser } = useContext(AuthContext)
 
     const [success, setSuccess] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
@@ -12,14 +15,23 @@ const Login = () => {
         const form = new FormData(e.currentTarget)
         const email = form.get("email")
         const password = form.get("password")
-
-
         setSuccess("")
         setErrorMessage("")
-        console.log(email, password)
+
+        signInUser(email,password)
+        .then(()=>{
+            toast.success('Login Successful');
+            setSuccess("Successfully Logged in")
+        })
+        .catch(error=>{
+            setErrorMessage(error.message)
+            toast.error(error.message)
+        })
+
+        // console.log(email, password)
     }
     return (
-        <div className="lg:mb-4 ">
+        <div className="lg:mb-4 flex justify-center ">
             <div className="hero-content flex-col w-full">
                 <div className="text-center">
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold ">Login now!</h1>

@@ -24,8 +24,21 @@ const Register = () => {
         const name = form.get("name")
         const photoUrl = form.get("photoUrl")
         // console.log(email, password,photoURL,name)
+
+        // Reset Messages
         setSuccess("")
         setErrorMessage("")
+
+        if (password.length < 6) {
+            setErrorMessage("Password Should be at least 6 Characters")
+            toast.error("Password Should be at least 6 Characters")
+            return
+        }
+        else if (!(/[A-Z]/.test(password) && /[a-z]/.test(password))) {
+            setErrorMessage("Password Should Contain 1 Uppercase and Lower Case Letter")
+            toast.error("Upper & Lower Case Letter Required")
+            return
+        }
 
         createUser(email, password)
             .then((result) => {
@@ -36,18 +49,19 @@ const Register = () => {
                         navigate("/")
                         console.log(result.user)
                     })
-                    .catch(error=>{
-                        console.log(error)
+                    .catch(error => {
+                        setErrorMessage(error.message)
                     })
             })
             .catch(error => {
                 setErrorMessage(error.message)
+                toast.error(error.message);
                 // console.log(error.message)
             })
     }
     return (
-        <div className="w-full lg:mb-4 ">
-            <div className="hero-content flex-col w-full">
+        <div className="w-full lg:mb-4 flex justify-center ">
+            <div className="hero-content flex-col w-full justify-center">
 
                 <div className="text-center">
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold md-2 ">Register now!</h1>
