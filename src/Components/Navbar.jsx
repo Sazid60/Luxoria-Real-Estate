@@ -44,7 +44,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <Link to={"/"} className="btn btn-ghost text-4xl font-bold">Luxoria</Link>
+                <Link to={"/"} className="btn btn-ghost text-2xl md:text-3xl lg:text-4xl font-bold">Luxoria</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -55,13 +55,20 @@ const Navbar = () => {
                 {
                     user ?
                         <div className="flex items-center gap-2 md:gap-2 lg:gap-4">
+                            <div className="tooltip tooltip-left" data-tip={user.displayName}>
+                                <img className="rounded-full h-10 w-10" src={user.photoURL} alt="" />
+                            </div>
                             <button className="btn btn-sm bg-[#E1B453] hover:bg-slate-500 text-white"
                                 onClick={handleSignOut}>Sign out</button>
-                            <img className="rounded-full h-10 w-10" src={user.photoURL} alt="" />
+
+
 
                         </div>
                         : <div className="flex items-center gap-2 md:gap-2 lg:gap-4">
-                            <div>
+                            <div className="tooltip tooltip-left" data-tip="No User Found">
+                                <img className="rounded-full h-10 w-10" src="/Capture.PNG" alt="" />
+                            </div>
+                            <div className="flex">
                                 <NavLink
                                     className="btn btn-sm bg-[#E1B453] hover:bg-slate-500 text-white" to={"/login"}>
                                     Login
@@ -71,7 +78,8 @@ const Navbar = () => {
                                     Register
                                 </NavLink>
                             </div>
-                            <img className="rounded-full h-10 w-10" src="/Capture.PNG" alt="" />
+
+
                         </div>
                 }
 
