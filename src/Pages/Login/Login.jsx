@@ -43,7 +43,7 @@ const Login = () => {
                 toast.success('Login Successful')
             })
     }
-    
+
     return (
         <div className="lg:mb-4 flex justify-center ">
             <div className="hero-content flex-col w-full">
@@ -79,8 +79,8 @@ const Login = () => {
                     </form>
                     <div className="divider text-gray-700">Continue With</div>
                     <div className="flex justify-center gap-4 lg:gap-7 mb-6 pb-0">
-                        <button className="btn rounded-full" onClick={() => handleSocialLogin(googleSignIn)}><FaGoogle /></button>
-                        <button className="btn rounded-full" onClick={() => handleSocialLogin(gitHubSignIn)}><FaGithub /></button>
+                        <button className="btn rounded-full" onClick={() => handleSocialLogin(googleSignIn)}><FaGoogle className="text-2xl text-[#DB4437]"/>Google</button>
+                        <button className="btn rounded-full" onClick={() => handleSocialLogin(gitHubSignIn)}><FaGithub className="text-3xl bg-black text-white rounded-full border border-white" />Github</button>
                     </div>
                 </div>
             </div>

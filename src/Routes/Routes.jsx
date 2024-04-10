@@ -8,11 +8,13 @@ import Contact from "../Pages/Contact/Contact";
 import Agents from "../Pages/Agents/Agents";
 import Blogs from "../Pages/Blogs/Blogs";
 import DetailEstate from "../Pages/DetailEstate/DetailEstate";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout></MainLayout>,
+      errorElement :<ErrorPage></ErrorPage>,
       children : [
         {
             path: "/",
