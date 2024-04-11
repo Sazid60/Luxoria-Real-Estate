@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://i.ibb.co/MGZSPrY/06.jpg",
+    "image": "https://i.ibb.co/Yy9xKtv/banner-3.jpg",
     "estate_title": "Majestic Manor",
     "segment": "Single Family Homes",
     "description": "Step into a world of opulence and tranquility with Majestic Manor, a palatial single-family home that redefines luxury living. Spread across a sprawling 5000 square feet, this residence offers an unparalleled blend of grandeur and comfort. From the moment you enter, you'll be captivated by the majestic interiors and exquisite craftsmanship. Enjoy the finest amenities including an infinity pool, home theater, gourmet kitchen, five bedrooms, and four bathrooms. Located in the prestigious area of Gulshan, Dhaka, Majestic Manor is more than just a home; it's a statement of sophistication and elegance.",
@@ -21,7 +21,7 @@
     "status": "For Rent",
     "area": "3000 SQFT",
     "location": "Banani, Dhaka",
-    "facilities": ["Private Elevator", "Rooftop Garden", "Fitness Center", "3 Bedrooms", "2 Bathrooms"]
+    "facilities": ["Elevator", "Rooftop Garden", "Fitness Center", "3 Bedrooms", "2 Bathrooms"]
   },
   {
     "id": 3,

@@ -1,15 +1,17 @@
 import { useContext, useState } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import toast from 'react-hot-toast';
 
 const Login = () => {
     const { user, signInUser, googleSignIn, gitHubSignIn } = useContext(AuthContext)
+    const location = useLocation()
+    console.log(location)
 
     const [success, setSuccess] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
-
+    const navigate = useNavigate()
     const handleSignIn = (e) => {
         e.preventDefault()
         const form = new FormData(e.currentTarget)
@@ -21,14 +23,9 @@ const Login = () => {
 
         signInUser(email, password)
             .then(() => {
-                if (!user) {
-                    toast.success('Login Successful');
-                    setSuccess("Successfully Logged In")
-                }
-                else {
-                    toast.error('Already Logged In');
-                    setErrorMessage("Already Logged In")
-                }
+                toast.success('Login Successful');
+                setSuccess("Successfully Logged In")
+                navigate(location?.state ? location.state : "/")
             })
             .catch(error => {
                 setErrorMessage(error.message)
@@ -42,6 +39,7 @@ const Login = () => {
             .then(() => {
                 toast.success('Login Successful')
                 setSuccess("Successfully Logged In")
+                navigate(location?.state ? location.state : "/")
             })
             .catch((error) => {
                 setErrorMessage(error.message)

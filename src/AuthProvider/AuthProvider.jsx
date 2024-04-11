@@ -13,11 +13,13 @@ const AuthProvider = ({ children }) => {
 
     // Const Register
     const createUser = (email, password) => {
+        setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
     // Update User 
     const updateUser = (name, photoUrl) => {
+        setLoading(true)
         return updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: photoUrl
@@ -26,6 +28,7 @@ const AuthProvider = ({ children }) => {
 
     // SignIn User
     const signInUser = (email, password) => {
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
@@ -43,6 +46,7 @@ const AuthProvider = ({ children }) => {
 
     // Signout
     const signOutUser = () => {
+        setLoading(true)
         return signOut(auth)
     }
 
@@ -51,6 +55,7 @@ const AuthProvider = ({ children }) => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             console.log("Observing : ", currentUser)
             setUser(currentUser)
+            setLoading(false)
         })
         return () => {
             unsubscribe();
@@ -58,7 +63,7 @@ const AuthProvider = ({ children }) => {
     }, [])
 
 
-    const authInfo = { user, loading, createUser, updateUser, signInUser, signOutUser,googleSignIn,gitHubSignIn}
+    const authInfo = { user, loading, createUser, updateUser, signInUser, signOutUser,googleSignIn,gitHubSignIn,setUser}
     return (
         <AuthContext.Provider value={authInfo}>
             {children}

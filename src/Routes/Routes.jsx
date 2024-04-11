@@ -9,6 +9,7 @@ import Agents from "../Pages/Agents/Agents";
 import Blogs from "../Pages/Blogs/Blogs";
 import DetailEstate from "../Pages/DetailEstate/DetailEstate";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
     {
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
         },
         {
             path: "/estate-details/:id",
-            element: <DetailEstate></DetailEstate>,
+            element: <PrivateRoutes><DetailEstate></DetailEstate></PrivateRoutes>,
             loader : ()=> fetch('/estate.json')
         },
         {
@@ -36,11 +37,11 @@ const router = createBrowserRouter([
         },
         {
             path: "/agents",
-            element:<Agents></Agents>,
+            element:<PrivateRoutes><Agents></Agents></PrivateRoutes>,
         },
         {
             path: "/profile",
-            element: <Profile></Profile>,
+            element: <PrivateRoutes><Profile /></PrivateRoutes>,
         },
         {
             path: "/blogs",

@@ -10,7 +10,7 @@ const Register = () => {
     const [success, setSuccess] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
 
-    const { createUser, updateUser, googleSignIn, gitHubSignIn, user } = useContext(AuthContext)
+    const { createUser, updateUser, googleSignIn, gitHubSignIn, user,setUser } = useContext(AuthContext)
     // console.log(createUser)
 
     const navigate = useNavigate()
@@ -44,6 +44,10 @@ const Register = () => {
             .then((result) => {
                 updateUser(name, photoUrl)
                     .then(() => {
+
+                        // Since the profile is not updating instantly
+                        setUser({ displayName: name, photoURL: photoUrl })
+
                         toast.success('Registration Successful.');
                         setSuccess("Successfully Registered ")
                         navigate("/")

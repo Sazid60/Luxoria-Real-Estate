@@ -76,7 +76,7 @@ const DetailEstate = () => {
 
                 <div className="flex lg:justify-center gap-3">
                     <Link to={"/"}> <button className="btn btn-sm bg-[#FFECB3] mt-4 mb-6 text-black w-28">Explore More</button></Link>
-                    <button className="btn btn-sm bg-[#E1B453] mt-4 mb-6 text-white w-28">Buy Now</button>
+                    <button className="btn btn-sm bg-[#E1B453] mt-4 mb-6 text-white w-28">Book Now</button>
                 </div>
             </div>
         </div>

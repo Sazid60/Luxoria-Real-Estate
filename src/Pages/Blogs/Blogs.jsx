@@ -35,7 +35,7 @@ const Blogs = () => {
                     <article className="border rounded-xl border-black border-opacity-30">
                         <a rel="noopener noreferrer" href="#" className="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:shadow-xl">
                             <h3 className="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">Navigating Rental Market Challenges in Urban Centers</h3>
-                            <time datetime="2024-04-05" className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 ">April 5, 2024</time>
+                            <time dateTime="2024-04-05" className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 ">April 5, 2024</time>
                             <p className="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 " style={{ fontStyle: 'italic' }}>Rental markets in urban centers pose unique challenges for both landlords and tenants. This article examines the factors contributing to rental market volatility, such as fluctuating demand, regulatory changes, and economic conditions. By understanding these challenges and implementing effective strategies, landlords can maximize rental income, while tenants can secure affordable and quality housing options in competitive urban environments.</p>
                         </a>
                     </article>

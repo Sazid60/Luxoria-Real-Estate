@@ -24,7 +24,10 @@ const Navbar = () => {
 
 
         {/* This will be private Protected This will stay and divert to login if no user*/}
-        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/agents"}>Agents</NavLink></li>
+        {
+
+            user && <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/agents"}>Agents</NavLink></li>
+        }
 
         <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/contact"}>Contact</NavLink></li>
 
@@ -56,7 +59,7 @@ const Navbar = () => {
                     user ?
                         <div className="flex items-center gap-2 md:gap-2 lg:gap-4">
                             <div className="tooltip tooltip-left" data-tip={user.displayName}>
-                                <Link to={"/profile"}><img className="rounded-full h-10 w-10" src={user.photoURL} alt="" /></Link>
+                                <Link to={"/profile"}><img className="rounded-full h-10 w-10" src={user.photoURL || "/Capture.PNG"} alt="" /></Link>
                             </div>
                             <button className="btn btn-sm bg-[#E1B453] hover:bg-slate-500 text-white"
                                 onClick={handleSignOut}>Sign out</button>
@@ -65,7 +68,7 @@ const Navbar = () => {
 
                         </div>
                         : <div className="flex items-center gap-2 md:gap-2 lg:gap-4">
-                            <div className="tooltip tooltip-left" data-tip="No User Found">
+                            <div className="tooltip tooltip-left" data-tip="No Image">
                                 <img className="rounded-full h-9 w-9" src="/Capture.PNG" alt="" />
                             </div>
                             <div className="flex">
