@@ -33,7 +33,7 @@ const Agents = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+                    <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full bg-gray-500" src="/Agent-2.jpg" />
                         <div className="flex-1 my-4">
                             <p className="text-xl font-semibold leading-snug">Aarav Islam</p>
@@ -54,7 +54,7 @@ const Agents = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
+                    <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full bg-gray-500" src="/Agent-3.jpg" />
                         <div className="flex-1 my-4">
                             <p className="text-xl font-semibold leading-snug">Farid Ahmed</p>
@@ -75,7 +75,7 @@ const Agents = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
+                    <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full bg-gray-500" src="/Agent-4.jpg" />
                         <div className="flex-1 my-4">
                             <p className="text-xl font-semibold leading-snug">Rajib Hasan</p>
@@ -96,7 +96,7 @@ const Agents = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-delay="340">
+                    <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full bg-gray-500" src="/Agent-5.jpg" />
                         <div className="flex-1 my-4">
                             <p className="text-xl font-semibold leading-snug" >Imran Ali</p>
@@ -118,7 +118,7 @@ const Agents = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-delay="340">
+                    <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full bg-gray-500" src="/Agent-6.jpg" />
                         <div className="flex-1 my-4">
                             <p className="text-xl font-semibold leading-snug">Arjun Rahman</p>
