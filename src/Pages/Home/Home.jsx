@@ -5,6 +5,10 @@ import EstateCards from "../../Components/EstateCards/EstateCards";
 import { useLoaderData } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 const Home = () => {
@@ -22,8 +26,9 @@ const Home = () => {
             <BottomBanner></BottomBanner>
 
             <div>
-                <h1 className="text-center text-4xl font-semibold mb-6">Properties</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6 lg:px-28">
+                <h1 className="text-center text-4xl font-semibold mb-2" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Properties</h1>
+                <p className="text-center  max-w-sm lg:max-w-xl mx-auto" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Explore our available properties and discover the perfect place to call home</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6 mt-6 lg:px-28">
                     {
                         estateData.map(singleEstateData => <EstateCards key={singleEstateData.id} singleEstateData={singleEstateData}></EstateCards>)
                     }
@@ -32,10 +37,11 @@ const Home = () => {
             </div>
 
             <>
-                <h1 className="text-center text-4xl font-semibold">Reviews</h1>
+                <h1 className="text-center text-4xl font-semibold mb-2" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Reviews</h1>
+                <p className="text-center  max-w-sm lg:max-w-xl mx-auto" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Property reviews offer crucial insights, guiding buyers and renters toward informed decisions about their next home</p>
 
                 <div className="flex flex-col lg:flex-row gap-6 max-w-5xl mx-auto mb-6 mt-6">
-                    < div className="bg-white rounded-lg overflow-hidden shadow-md pb-2" >
+                    < div className="bg-white rounded-lg overflow-hidden shadow-md pb-2" data-aos="fade-right" data-aos-duration="500" data-aos-delay="320">
                         <div className="relative">
                             <img className="h-16 w-16 rounded-full mx-auto mt-4" src="/reviewer-1.jpg" alt="Reviewer" />
                             <div className="absolute bottom-0 left-0 bg-white rounded-full p-1"> </div>
@@ -47,7 +53,7 @@ const Home = () => {
                             </p>
                         </div>
                     </div>
-                    < div className="bg-white rounded-lg overflow-hidden shadow-md pb-2" >
+                    < div className="bg-white rounded-lg overflow-hidden shadow-md pb-2" data-aos="fade-left" data-aos-duration="500" data-aos-delay="320">
                         <div className="relative">
                             <img className="h-16 w-16 rounded-full mx-auto mt-4" src="/reviewer-2.jpg" alt="Reviewer" />
                             <div className="absolute bottom-0 left-0 bg-white rounded-full p-1"> </div>

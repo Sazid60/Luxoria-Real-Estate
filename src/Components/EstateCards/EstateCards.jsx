@@ -11,7 +11,7 @@ const EstateCards = ({ singleEstateData }) => {
     return (
         <>
             {/* Card */}
-            <div className="bg-base-100 shadow-md p-2 rounded-none hover:scale-105 hover:shadow-2xl ">
+            <div className="bg-base-100 shadow-md p-2 rounded-none hover:scale-105 hover:shadow-2xl " data-aos="fade-up" data-aos-duration="500" data-aos-delay="520">
                 <figure className="w-full"><img className="object-cover h-40 w-full" src={image} alt="" />
                 </figure>
                 <div className="p-2">

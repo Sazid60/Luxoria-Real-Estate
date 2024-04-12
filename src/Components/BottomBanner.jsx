@@ -2,7 +2,7 @@
 
 const BottomBanner = () => {
     return (
-        <div>
+        <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
             <div className='
                 mt-3  flex flex-col md:flex-row lg:flex-row lg:items-center justify-around text-left p-6 '>
                 <div>

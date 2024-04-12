@@ -34,37 +34,37 @@ const DetailEstate = () => {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50"></div>
                 <div className="absolute inset-0 flex justify-center items-center">
-                    <h1 className="text-xl md:text-2xl lg:text-4xl font-bold text-white">{segment}</h1>
+                    <h1 className="text-xl md:text-2xl lg:text-4xl font-bold text-white" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">{segment}</h1>
                 </div>
             </div>
 
             <div className="mt-3">
                 <div>
-                    <h1 className="text-3xl font-bold">{estate_title}</h1>
+                    <h1 className="text-3xl font-bold" data-aos="fade-left" data-aos-duration="500" data-aos-delay="400">{estate_title}</h1>
                 </div>
 
-                <p className="mt-4 mb-4">{description}</p>
+                <p className="mt-4 mb-4" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">{description}</p>
 
                 <div className="overflow-x-auto">
                     <table className="table-auto w-full text-sm border border-solid ">
                         <tbody>
-                            <tr>
+                            <tr data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
                                 <td className="px-2 py-1 text-left font-bold border border-solid ">Price</td>
                                 <td className="px-2 py-1 border border-solid ">{price}</td>
                             </tr>
-                            <tr>
+                            <tr data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
                                 <td className="px-2 py-1 text-left font-bold border ">Status</td>
                                 <td className="px-2 py-1 border border-solid ">{status}</td>
                             </tr>
-                            <tr>
+                            <tr data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
                                 <td className="px-2 py-1 text-left font-bold border border-solid">Area</td>
                                 <td className="px-2 py-1 border border-solid0">{area}</td>
                             </tr>
-                            <tr>
+                            <tr data-aos="fade-up" data-aos-duration="500" data-aos-delay="900">
                                 <td className="px-2 py-1 text-left font-bold border ">Location</td>
                                 <td className="px-2 py-1 border border-solid ">{location}</td>
                             </tr>
-                            <tr>
+                            <tr data-aos="fade-up" data-aos-duration="500" data-aos-delay="1000">
                                 <td className="px-2 py-1 text-left font-bold border">Facilities</td>
                                 <td className="px-2 py-1 border ">
                                     <ul>
@@ -78,7 +78,7 @@ const DetailEstate = () => {
                     </table>
                 </div>
 
-                <div className="flex lg:justify-center gap-3">
+                <div className="flex lg:justify-center gap-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1100">
                     <Link to={"/"}> <button className="btn btn-sm bg-[#FFECB3] mt-4 mb-6 text-black w-28">Explore More</button></Link>
                     <button className="btn btn-sm bg-[#E1B453] mt-4 mb-6 text-white w-28">Book Now</button>
                 </div>
