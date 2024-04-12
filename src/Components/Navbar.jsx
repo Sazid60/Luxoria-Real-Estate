@@ -24,10 +24,7 @@ const Navbar = () => {
 
 
         {/* This will be private Protected This will stay and divert to login if no user*/}
-        {
-
-            user && <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/agents"}>Agents</NavLink></li>
-        }
+        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/agents"}>Agents</NavLink></li>
 
         <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/contact"}>Contact</NavLink></li>
 
