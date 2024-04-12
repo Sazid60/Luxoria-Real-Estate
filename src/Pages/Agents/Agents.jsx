@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Agents = () => {
     return (
         <section className="py-2 ">
+            <Helmet>
+                <title>Agents</title>
+            </Helmet>
             <div className="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
                 <h1 className="text-center text-4xl font-semibold">Our Agents</h1>
                 <div className="flex flex-row flex-wrap-reverse justify-center mt-6">
@@ -35,18 +39,18 @@ const Agents = () => {
                             <p>Dhanmondi-Agent</p>
                         </div>
                         <div className="flex items-center justify-center p-3 space-x-3 border-t-2">
-                                <a rel="noopener noreferrer" href="#" title="Email" className="text-gray-900 hover:text-violet-400">
-                                    <MdEmail />
-                                </a>
-                                <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-900 hover:text-violet-400">
-                                    <FaTwitter />
-                                </a>
-                                <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-900 hover:text-violet-400">
-                                    <FaLinkedin />
-                                </a>
-                                <a rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-900 hover:text-violet-400">
-                                    <FaGithub />
-                                </a>
+                            <a rel="noopener noreferrer" href="#" title="Email" className="text-gray-900 hover:text-violet-400">
+                                <MdEmail />
+                            </a>
+                            <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-900 hover:text-violet-400">
+                                <FaTwitter />
+                            </a>
+                            <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-900 hover:text-violet-400">
+                                <FaLinkedin />
+                            </a>
+                            <a rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-900 hover:text-violet-400">
+                                <FaGithub />
+                            </a>
                         </div>
                     </div>
                     <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800">
@@ -56,18 +60,18 @@ const Agents = () => {
                             <p>Gulshan-Agent</p>
                         </div>
                         <div className="flex items-center justify-center p-3 space-x-3 border-t-2">
-                                <a rel="noopener noreferrer" href="#" title="Email" className="text-gray-900 hover:text-violet-400">
-                                    <MdEmail />
-                                </a>
-                                <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-900 hover:text-violet-400">
-                                    <FaTwitter />
-                                </a>
-                                <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-900 hover:text-violet-400">
-                                    <FaLinkedin />
-                                </a>
-                                <a rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-900 hover:text-violet-400">
-                                    <FaGithub />
-                                </a>
+                            <a rel="noopener noreferrer" href="#" title="Email" className="text-gray-900 hover:text-violet-400">
+                                <MdEmail />
+                            </a>
+                            <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-900 hover:text-violet-400">
+                                <FaTwitter />
+                            </a>
+                            <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-900 hover:text-violet-400">
+                                <FaLinkedin />
+                            </a>
+                            <a rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-900 hover:text-violet-400">
+                                <FaGithub />
+                            </a>
                         </div>
                     </div>
                     <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800">
@@ -77,18 +81,18 @@ const Agents = () => {
                             <p>Mirpur-Agent</p>
                         </div>
                         <div className="flex items-center justify-center p-3 space-x-3 border-t-2">
-                                <a rel="noopener noreferrer" href="#" title="Email" className="text-gray-900 hover:text-violet-400">
-                                    <MdEmail />
-                                </a>
-                                <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-900 hover:text-violet-400">
-                                    <FaTwitter />
-                                </a>
-                                <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-900 hover:text-violet-400">
-                                    <FaLinkedin />
-                                </a>
-                                <a rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-900 hover:text-violet-400">
-                                    <FaGithub />
-                                </a>
+                            <a rel="noopener noreferrer" href="#" title="Email" className="text-gray-900 hover:text-violet-400">
+                                <MdEmail />
+                            </a>
+                            <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-900 hover:text-violet-400">
+                                <FaTwitter />
+                            </a>
+                            <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-900 hover:text-violet-400">
+                                <FaLinkedin />
+                            </a>
+                            <a rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-900 hover:text-violet-400">
+                                <FaGithub />
+                            </a>
                         </div>
                     </div>
                     <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800">

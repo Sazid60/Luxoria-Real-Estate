@@ -4,13 +4,14 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 import toast from 'react-hot-toast';
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
 
     const [success, setSuccess] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
 
-    const { createUser, updateUser, googleSignIn, gitHubSignIn, user,setUser } = useContext(AuthContext)
+    const { createUser, updateUser, googleSignIn, gitHubSignIn, user, setUser } = useContext(AuthContext)
     // console.log(createUser)
 
     const navigate = useNavigate()
@@ -73,7 +74,7 @@ const Register = () => {
                     setSuccess("Successfully Registered ")
                     navigate("/")
                 }
-                else{
+                else {
                     toast.error('Already User Created');
                     setErrorMessage("Already User Created")
                 }
@@ -85,6 +86,9 @@ const Register = () => {
     }
     return (
         <div className="w-full lg:mb-4 flex justify-center ">
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <div className="hero-content flex-col w-full justify-center">
 
                 <div className="text-center">

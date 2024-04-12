@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 
 
@@ -24,6 +25,9 @@ const DetailEstate = () => {
 
     return (
         <div className="flex flex-col">
+            <Helmet>
+                <title>Property-Details</title>
+            </Helmet>
             <div className='relative h-[150px] md:h-[300px] lg:h-[300px] w-full'>
                 <div className='absolute inset-0 bg-cover bg-center bg-no-repeat flex justify-center items-center'>
                     <img src={image} alt="Banner Image" className="w-full h-full object-cover" />
@@ -64,7 +68,7 @@ const DetailEstate = () => {
                                 <td className="px-2 py-1 text-left font-bold border">Facilities</td>
                                 <td className="px-2 py-1 border ">
                                     <ul>
-                                        { facilities &&
+                                        {facilities &&
                                             facilities.map(singleFacility => <li key={singleFacility} className="">{singleFacility}</li>)
                                         }
                                     </ul>

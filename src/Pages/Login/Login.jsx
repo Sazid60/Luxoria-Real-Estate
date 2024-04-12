@@ -3,6 +3,7 @@ import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import toast from 'react-hot-toast';
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     const { user, signInUser, googleSignIn, gitHubSignIn } = useContext(AuthContext)
@@ -50,6 +51,9 @@ const Login = () => {
 
     return (
         <div className="lg:mb-4 flex justify-center ">
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <div className="hero-content flex-col w-full">
                 <div className="text-center">
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold ">Login now!</h1>

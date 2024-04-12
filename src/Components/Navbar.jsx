@@ -33,7 +33,7 @@ const Navbar = () => {
 
         {/* This wil be protected routes  but this will appear after login*/}
         {
-            user && <li><NavLink className="btn btn-sm btn-ghost  " to={"profile"}>Update Profile</NavLink></li>
+            user && <li><NavLink className="btn btn-sm btn-ghost" to={"profile"}>Update Profile</NavLink></li>
         }
     </>
     return (
@@ -62,7 +62,7 @@ const Navbar = () => {
                                 <Link to={"/profile"}><img className="rounded-full h-10 w-10" src={user.photoURL || "/Capture.PNG"} alt="" /></Link>
                             </div>
                             <button className="btn btn-sm bg-[#E1B453] hover:bg-slate-500 text-white"
-                                onClick={handleSignOut}>Sign out</button>
+                                onClick={handleSignOut}>Logout</button>
 
 
 
@@ -81,8 +81,6 @@ const Navbar = () => {
                                     Register
                                 </NavLink>
                             </div>
-
-
                         </div>
                 }
 

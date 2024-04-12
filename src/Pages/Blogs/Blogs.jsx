@@ -1,7 +1,11 @@
+import { Helmet } from "react-helmet-async";
 
 const Blogs = () => {
     return (
         <div>
+            <Helmet>
+                <title>Blogs</title>
+            </Helmet>
             <h1 className="text-center text-4xl font-semibold mt-3">Today's Blogs</h1>
             <ul className="p-4 lg:p-8">
                 <li className="mb-2">

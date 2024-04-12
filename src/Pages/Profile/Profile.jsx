@@ -1,10 +1,11 @@
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { useContext, useState } from "react";
 import toast from 'react-hot-toast';
+import { Helmet } from "react-helmet-async";
 
 const Profile = () => {
-    const { user,updateUser,setUser } = useContext(AuthContext);
+    const { user, updateUser, setUser } = useContext(AuthContext);
     const [success, setSuccess] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
 
@@ -20,29 +21,33 @@ const Profile = () => {
         console.log(name, photoUrl)
 
         updateUser(name, photoUrl)
-        .then(() => {
+            .then(() => {
 
-            // Since the profile is not updating instantly
-            setUser({ displayName: name, photoURL: photoUrl })
+                // Since the profile is not updating instantly
+                setUser({ displayName: name, photoURL: photoUrl })
 
-            toast.success('Update Successful');
-            setSuccess("Successfully Update")
-            navigate("/")
-        })
-        .catch(error=>{
-            setErrorMessage(error.message)
-            console.log(errorMessage)
-        })
+                toast.success('Update Successful');
+                setSuccess("Successfully Update")
+                navigate("/")
+            })
+            .catch(error => {
+                setErrorMessage(error.message)
+                console.log(errorMessage)
+            })
     };
 
     return (
         <div className="w-full mt-6">
+            <Helmet>
+                <title>Profile</title>
+            </Helmet>
             <div className="flex flex-col justify-center items-center">
-                <div className="flex justify-center items-center flex-col">
+                <div className="flex justify-center items-center lg:justify-normal flex-col lg:w-[50%]">
                     <img src={user.photoURL} className="h-24 w-24 lg:h-32 lg:w-32 rounded-full" />
-                    <h1 className="text-2xl font-bold mt-4">{user.displayName.toUpperCase()}</h1>
+                    <h1 className="text-2xl font-bold mt-4"> {user.displayName.toUpperCase()}</h1>
                 </div>
                 <div className="w-full md:w-[70%]lg:w-[70%] bg-white">
+                    <h1 className="text-lg font-bold mt-6 ml-3">Want To Update Profile ?</h1>
                     <form className="p-3 w-full pb-2" onSubmit={handleSubmit}>
                         <div className="form-control">
                             <label className="label">
