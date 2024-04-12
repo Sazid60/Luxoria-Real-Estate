@@ -1,22 +1,27 @@
 import { useContext, useState } from "react";
-import { FaGithub, FaGoogle } from "react-icons/fa";
+import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 import toast from 'react-hot-toast';
 import { Helmet } from "react-helmet-async";
+import { IoEyeOutline } from "react-icons/io5";
 
 const Register = () => {
 
     const [success, setSuccess] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
 
+    const [showPass, setShowPass] = useState(false)
+
     const { createUser, updateUser, googleSignIn, gitHubSignIn, user, setUser } = useContext(AuthContext)
     // console.log(createUser)
 
     const navigate = useNavigate()
 
-
+    const handleShowPassword = () => {
+        setShowPass(!showPass)
+    }
     const handleRegister = (e) => {
         e.preventDefault()
         const form = new FormData(e.currentTarget)
@@ -118,7 +123,14 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text text-gray-700 text-xs">Password</span>
                             </label>
-                            <input type="password" placeholder="Password" name="password" className="input input-bordered text-gray-700 bg-transparent border-gray-300 " required />
+                            <div className="relative w-full">
+                                <input type={showPass ? "text" : "password"} placeholder="Password" name="password" className="input input-bordered text-gray-700 bg-transparent border-gray-300 w-full " required />
+                                <div onClick={handleShowPassword} className="absolute top-[40%] left-[90%]" >
+                                    {
+                                        showPass ? <FaRegEye /> : <FaRegEyeSlash />
+                                    }
+                                </div>
+                            </div>
                             {
                                 errorMessage && <p className='text-red-500 text-sm mt-4'>Error :{errorMessage} </p>
                             }
