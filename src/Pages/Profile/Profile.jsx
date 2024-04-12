@@ -48,26 +48,26 @@ const Profile = () => {
                 </div>
                 <div className="w-full md:w-[70%]lg:w-[70%] bg-white">
                     <h1 className="text-lg font-bold mt-6 ml-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="420">Want To Update Profile ?</h1>
-                    <form className="p-3 w-full pb-2" onSubmit={handleSubmit}>
-                        <div className="form-control" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+                    <form className="p-3 w-full pb-2" onSubmit={handleSubmit} data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+                        <div className="form-control" >
                             <label className="label">
                                 <span className="label-text text-gray-700 text-xs">Name</span>
                             </label>
                             <input type="text" placeholder="Your Name" name="name" value={name} onChange={(e) => setName(e.target.value)} className="input input-bordered text-gray-700 bg-transparent border-gray-300" required />
                         </div>
-                        <div className="form-control" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
+                        <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-gray-700 text-xs">Email</span>
                             </label>
                             <input type="email" placeholder="Email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="input input-bordered text-gray-700 bg-transparent border-gray-300" disabled />
                         </div>
-                        <div className="form-control" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
+                        <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-gray-700 text-xs">PhotoURL</span>
                             </label>
                             <input type="text" placeholder="Photo URL" name="photoUrl" value={photoUrl} onChange={(e) => setPhotoUrl(e.target.value)} className="input input-bordered text-gray-700 bg-transparent border-gray-300" required />
                         </div>
-                        <div className="form-control mt-2 flex justify-center items-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900">
+                        <div className="form-control mt-2 flex justify-center items-center" >
                             <button type="submit" className="btn w-36 bg-[#E1B453] border-0 text-white mb-6">Update</button>
                         </div>
                     </form>

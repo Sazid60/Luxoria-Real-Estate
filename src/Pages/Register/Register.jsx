@@ -97,29 +97,29 @@ const Register = () => {
             <div className="hero-content flex-col w-full justify-center">
 
                 <div className="text-center">
-                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold md-2 " data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Register now!</h1>
+                    <h1 className="text-xl md:text-2xl lg:text-3xl font-bold md-2 " data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Register now!</h1>
                 </div>
                 <div className="card w-full lg:w-[40%] shadow-2xl bg-white"  data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400">
-                    <form className="card-body w-full pb-2" onSubmit={handleRegister}>
-                        <div className="form-control" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+                    <form className="card-body w-full pb-2" onSubmit={handleRegister} data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+                        <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-gray-700 text-xs">Name</span>
                             </label>
                             <input type="text" placeholder="Your Name" name="name" className="input input-bordered text-gray-700 bg-transparent border-gray-300 " required />
                         </div>
-                        <div className="form-control" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
+                        <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-gray-700 text-xs">Email</span>
                             </label>
                             <input type="email" placeholder="Email" name="email" className="input input-bordered text-gray-700 bg-transparent border-gray-300 " required />
                         </div>
-                        <div className="form-control" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
+                        <div className="form-control" >
                             <label className="label">
                                 <span className="label-text text-gray-700 text-xs">PhotoURL</span>
                             </label>
                             <input type="text" placeholder="Photo URL" name="photoUrl" className="input input-bordered text-gray-700 bg-transparent border-gray-300 " required />
                         </div>
-                        <div className="form-control" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
+                        <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-gray-700 text-xs">Password</span>
                             </label>
@@ -138,15 +138,15 @@ const Register = () => {
                                 success && <p className='text-blue-700 text-sm mt-4'>{success}</p>
                             }
                         </div>
-                        <div className="form-control mt-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900">
+                        <div className="form-control mt-2">
                             <button className="btn  bg-[#E1B453] border-0 text-white">Register</button>
                         </div>
-                        <div className="mt-2 text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                        <div className="mt-2 text-center">
                             <p className="text-gray-700 text-sm">Do Not Have Account ? <Link className="text-blue-600 font-semibold" to={"/login"}>Login</Link> </p>
                         </div>
                     </form>
-                    <div className="divider text-gray-700" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1100">Continue With</div>
-                    <div className="flex justify-center gap-4 lg:gap-7 mb-6 pb-0"data-aos="fade-up" data-aos-duration="500" data-aos-delay="1200">
+                    <div className="divider text-gray-700" >Continue With</div>
+                    <div className="flex justify-center gap-4 lg:gap-7 mb-6 pb-0">
                         <button className="btn rounded-full" onClick={() => handleSocialLogin(googleSignIn)}><FaGoogle className="text-2xl text-[#DB4437]" />Google</button>
                         <button className="btn rounded-full" onClick={() => handleSocialLogin(gitHubSignIn)}><FaGithub className="text-3xl bg-black text-white rounded-full border border-white" />Github</button>
                     </div>

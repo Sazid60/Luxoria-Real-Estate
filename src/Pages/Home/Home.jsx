@@ -41,7 +41,7 @@ const Home = () => {
                 <p className="text-center  max-w-sm lg:max-w-xl mx-auto" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Property reviews offer crucial insights, guiding buyers and renters toward informed decisions about their next home</p>
 
                 <div className="flex flex-col lg:flex-row gap-6 max-w-5xl mx-auto mb-6 mt-6">
-                    < div className="bg-white rounded-lg overflow-hidden shadow-md pb-2" data-aos="fade-right" data-aos-duration="500" data-aos-delay="320">
+                    < div className="bg-white rounded-lg overflow-hidden shadow-md pb-2" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">
                         <div className="relative">
                             <img className="h-16 w-16 rounded-full mx-auto mt-4" src="/reviewer-1.jpg" alt="Reviewer" />
                             <div className="absolute bottom-0 left-0 bg-white rounded-full p-1"> </div>
@@ -53,7 +53,7 @@ const Home = () => {
                             </p>
                         </div>
                     </div>
-                    < div className="bg-white rounded-lg overflow-hidden shadow-md pb-2" data-aos="fade-left" data-aos-duration="500" data-aos-delay="320">
+                    < div className="bg-white rounded-lg overflow-hidden shadow-md pb-2" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">
                         <div className="relative">
                             <img className="h-16 w-16 rounded-full mx-auto mt-4" src="/reviewer-2.jpg" alt="Reviewer" />
                             <div className="absolute bottom-0 left-0 bg-white rounded-full p-1"> </div>
