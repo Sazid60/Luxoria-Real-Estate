@@ -98,7 +98,7 @@ const Login = () => {
                             <button className="btn bg-[#E1B453] border-0 text-white">Login</button>
                         </div>
                         <div className="mt-4 text-center">
-                            <p className="text-gray-700 text-sm">Do Not Have Account ? <Link className="text-blue-600 font-semibold" to={"/register"}>Register</Link> </p>
+                            <p className="text-gray-700 text-sm">Do Not Have Account ? <Link className="text-blue-600 font-semibold" to={"/register"} state={location.state}>Register</Link> </p>
                         </div>
                     </form>
                     <div className="divider text-gray-700">Continue With</div>

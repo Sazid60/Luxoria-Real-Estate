@@ -39,19 +39,19 @@ const Banner = () => {
                         className="mySwiper"
                     >
 
-                        <SwiperSlide><div className='bg-[url(/banner-1.jpg)] h-[200px] md:h-[300px] lg:h-[400px] w-full bg-cover bg-center bg-no-repeat'>
+                        <SwiperSlide><div className='bg-[url(/banner-1.jpg)] h-[200px] md:h-[300px] lg:h-[330px] w-full bg-cover bg-center bg-no-repeat'>
                             <div className='absolute inset-0 bg-gradient-to-b from-black  to-transparent opacity-60'></div>
                         </div>
                         </SwiperSlide>
-                        <SwiperSlide><div className='bg-[url(/banner-2.jpg)] h-[200px] md:h-[300px] lg:h-[400px] w-full bg-cover bg-center bg-no-repeat'>
+                        <SwiperSlide><div className='bg-[url(/banner-2.jpg)] h-[200px] md:h-[300px] lg:h-[330px] w-full bg-cover bg-center bg-no-repeat'>
                             <div className='absolute inset-0 bg-gradient-to-b from-black  to-transparent opacity-60'></div>
                         </div>
                         </SwiperSlide>
-                        <SwiperSlide><div className='bg-[url(/banner-3.jpg)] h-[200px] md:h-[300px] lg:h-[400px] w-full bg-cover bg-center bg-no-repeat'>
+                        <SwiperSlide><div className='bg-[url(/banner-3.jpg)] h-[200px] md:h-[300px] lg:h-[330px] w-full bg-cover bg-center bg-no-repeat'>
                             <div className='absolute inset-0 bg-gradient-to-b from-black  to-transparent opacity-60'></div>
                         </div>
                         </SwiperSlide>
-                        <SwiperSlide><div className='bg-[url(/banner-4.jpg)] h-[200px] md:h-[300px] lg:h-[400px] w-full bg-cover bg-center bg-no-repeat'>
+                        <SwiperSlide><div className='bg-[url(/banner-4.jpg)] h-[200px] md:h-[300px] lg:h-[330px] w-full bg-cover bg-center bg-no-repeat'>
                             <div className='absolute inset-0 bg-gradient-to-b from-black  to-transparent opacity-60'></div>
                         </div></SwiperSlide>
                     </Swiper>

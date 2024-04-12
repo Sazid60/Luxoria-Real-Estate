@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate,useLocation } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 import toast from 'react-hot-toast';
@@ -17,7 +17,11 @@ const Register = () => {
     const { createUser, updateUser, googleSignIn, gitHubSignIn, user, setUser } = useContext(AuthContext)
     // console.log(createUser)
 
+
+
     const navigate = useNavigate()
+    const location = useLocation()
+    console.log(location)
 
     const handleShowPassword = () => {
         setShowPass(!showPass)
@@ -56,7 +60,7 @@ const Register = () => {
 
                         toast.success('Registration Successful.');
                         setSuccess("Successfully Registered ")
-                        navigate("/")
+                        navigate(location?.state ? location.state : "/")
                         console.log(result.user)
                     })
                     .catch(error => {
@@ -77,7 +81,7 @@ const Register = () => {
                 if (!user) {
                     toast.success('Registration Successful')
                     setSuccess("Successfully Registered ")
-                    navigate("/")
+                    navigate(location?.state ? location.state : "/")
                 }
                 else {
                     toast.error('Already User Created');

@@ -26,7 +26,7 @@ const DetailEstate = () => {
     return (
         <div className="flex flex-col">
             <Helmet>
-                <title>Property-Details</title>
+                <title>{estate_title}</title>
             </Helmet>
             <div className='relative h-[150px] md:h-[300px] lg:h-[300px] w-full'>
                 <div className='absolute inset-0 bg-cover bg-center bg-no-repeat flex justify-center items-center'>
