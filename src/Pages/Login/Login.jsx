@@ -83,7 +83,7 @@ const Login = () => {
                                 <input type={showPass ? "text" : "password"} placeholder="Password" name="password" className="input input-bordered text-gray-700 bg-transparent border-gray-300 w-full " required />
                                 <div onClick={handleShowPassword} className="absolute top-[40%] left-[90%]" >
                                     {
-                                        showPass ? <FaRegEye /> : <FaRegEyeSlash />
+                                        showPass ? <FaRegEyeSlash /> : <FaRegEye />
                                     }
                                 </div>
                             </div>

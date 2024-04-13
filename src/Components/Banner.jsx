@@ -17,7 +17,7 @@ const Banner = () => {
         <div>
             <div className='relative'>
                 <div className='absolute inset-0 flex flex-col z-10 translate-x-4 md:translate-x-16 lg:translate-x-16 translate-y-8 md:translate-y-16 lg:translate-y-16 w-[70%] h-[70%]'>
-                    <h1 className='font-bold text-3xl md:text-4xl lg:text-6xl text-white mb-6' data-aos="fade-right" data-aos-duration="1000">Discover Your <br /> New <span className='text-[#E1B453]'>Home</span></h1>
+                    <h1 className='font-bold text-3xl md:text-4xl lg:text-6xl text-white mb-2 md:mb-3 lg:mb-6' data-aos="fade-right" data-aos-duration="1000">Discover Your <br /> New <span className='text-[#E1B453]'>Home</span></h1>
                     <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                     <TypeAnimation className='text-white text-lg  md:text-xl lg:text-4xl font-semibold'  
                         sequence={['Single-Family', 3000, ' Town-Houses', 3000, 'Apartments', 3000, 'Student-Housing', 3000, 'Senior-Living-Communities', 3000, 'Vacation-Rentals', 3000]}

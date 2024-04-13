@@ -131,7 +131,7 @@ const Register = () => {
                                 <input type={showPass ? "text" : "password"} placeholder="Password" name="password" className="input input-bordered text-gray-700 bg-transparent border-gray-300 w-full " required />
                                 <div onClick={handleShowPassword} className="absolute top-[40%] left-[90%]" >
                                     {
-                                        showPass ? <FaRegEye /> : <FaRegEyeSlash />
+                                        showPass ? <FaRegEyeSlash /> : <FaRegEye />
                                     }
                                 </div>
                             </div>
@@ -146,7 +146,7 @@ const Register = () => {
                             <button className="btn  bg-[#E1B453] border-0 text-white">Register</button>
                         </div>
                         <div className="mt-2 text-center">
-                            <p className="text-gray-700 text-sm">Do Not Have Account ? <Link className="text-blue-600 font-semibold" to={"/login"}>Login</Link> </p>
+                            <p className="text-gray-700 text-sm">Already Have Account ? <Link className="text-blue-600 font-semibold" to={"/login"}>Login</Link> </p>
                         </div>
                     </form>
                     <div className="divider text-gray-700" >Continue With</div>

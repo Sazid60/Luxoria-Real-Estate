@@ -20,18 +20,12 @@ const Navbar = () => {
         <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/"}>Home</NavLink></li>
         <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/blogs"}>Blogs</NavLink></li>
 
-
-
-
-        {/* This will be private Protected This will stay and divert to login if no user*/}
-        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/agents"}>Agents</NavLink></li>
-
         <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/contact"}>Contact</NavLink></li>
 
-        {/* This wil be protected routes  but this will appear after login*/}
-        {
-            user && <li><NavLink className="btn btn-sm btn-ghost" to={"profile"}>Update Profile</NavLink></li>
-        }
+        <li className="mr-2"><NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-[#FFECB3]' : 'btn btn-sm bg-transparent border-0'} to={"/agents"}>Agents</NavLink></li>
+
+        <li><NavLink className="btn btn-sm btn-ghost" to={"profile"}>Update Profile</NavLink></li>
+
     </>
     return (
         <div className="navbar bg-base-100">
@@ -56,7 +50,7 @@ const Navbar = () => {
                     user ?
                         <div className="flex items-center gap-2 md:gap-2 lg:gap-4">
                             <div className="tooltip tooltip-left" data-tip={user.displayName}>
-                                <Link to={"/profile"}><img className="rounded-full h-7 w-7 md:h-8 md:w-8 lg:h-9 lg:w-9" src={user.photoURL || "/Capture.PNG"} alt="" /></Link>
+                                <Link to={"/profile"}><img className="rounded-full h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9" src={user.photoURL || "/Capture.PNG"} alt="" /></Link>
                             </div>
                             <button className="btn btn-sm bg-[#E1B453] hover:bg-slate-500 text-white"
                                 onClick={handleSignOut}>Logout</button>
@@ -66,7 +60,7 @@ const Navbar = () => {
                         </div>
                         : <div className="flex items-center gap-2 md:gap-2 lg:gap-4">
                             <div className="tooltip tooltip-left" data-tip="No Image">
-                                <img className="rounded-full h-7 w-7 md:h-8 md:w-8 lg:h-9 lg:w-9" src="/Capture.PNG" alt="" />
+                                <img className="rounded-full h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9" src="/Capture.PNG" alt="" />
                             </div>
                             <div className="flex">
                                 <NavLink
