@@ -7,14 +7,15 @@ const Contact = () => {
             <Helmet>
                 <title>Contacts</title>
             </Helmet>
-            <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-4 mx-auto lg:mt-7 rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 ">
+            <div className="space-y-2 text-center mt-3 mb-2">
+                <h2 className=" font-bold leading-tight text-2xl md:text-2xl lg:text-3xl ">Let's talk!</h2>
+                <p className="text-xs md:text-lg lg:text-xl">Share Your Feedback With Us</p>
+            </div>
+            <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8  mx-auto  rounded-lg md:grid-cols-2 justify-center items-center md:px-12 lg:px-16 xl:px-32 ">
                 <div className="flex flex-col justify-between" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">
-                    <div className="space-y-2 text-center">
-                        <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's talk!</h2>
-                        <div className="">Share Your Feedback With Us</div>
-                    </div>
+
                     <div className="w-full">
-                        <img src="/contact.png" alt="" className="p-6" />
+                        <img src="/contact.png" alt="" className=" h-auto w-auto" />
                     </div>
                 </div>
                 <form noValidate="" className="space-y-3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">
@@ -30,13 +31,13 @@ const Contact = () => {
                         <label htmlFor="message" className="text-sm">Message</label>
                         <textarea id="message" rows="3" className="w-full p-3 rounded border-2 border-black"></textarea>
                     </div>
-                    <button type="submit" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded-lg btn  bg-[#E1B453] hover:bg-slate-500 text-white">Send Message</button>
+                    <button type="submit" className="w-full  text-sm font-bold tracking-wide uppercase rounded-lg btn btn-sm  bg-[#E1B453] hover:bg-slate-500 text-white">Send Message</button>
                 </form>
             </div>
-            <div className="w-full"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+            <div className="w-full" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                 <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-                    <h2 className="text-2xl font-semibold sm:text-4xl text-center" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Frequently Asked Questions</h2>
-                    <p className="mt-4 mb-8 text-center" data-aos="zoom-in" data-aos-duration="500" >Explore common inquiries about our real estate services.</p>
+                    <h2 className="font-bold leading-tight text-2xl md:text-2xl lg:text-3xl text-center" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Frequently Asked Questions</h2>
+                    <p className="text-center  text-xs md:text-lg lg:text-xl max-w-2xl mx-auto mt-2 mb-3" data-aos="zoom-in" data-aos-duration="500" >Explore common inquiries about our real estate services.</p>
                     <div className="space-y-4">
                         <details className="w-full rounded-lg border border-gray-300" >
                             <summary className="px-4 py-6 focus:outline-none focus-visible:ring-blue-400 cursor-pointer">How do I find properties listed on your website?</summary>

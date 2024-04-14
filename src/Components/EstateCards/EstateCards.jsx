@@ -12,7 +12,7 @@ const EstateCards = ({ singleEstateData }) => {
         <>
             {/* Card */}
             <div className="bg-base-100 shadow-md p-2 rounded-none hover:scale-105 hover:shadow-2xl " data-aos="fade-up" data-aos-duration="500" data-aos-delay="520">
-                <figure className="w-full"><img className="object-cover h-40 w-full" src={image} alt="" />
+                <figure className="w-full"><img className="object-cover h-32 md:h-40 lg:h-40 w-full" src={image} alt="" />
                 </figure>
                 <div className="p-2">
                     <div>
@@ -33,7 +33,7 @@ const EstateCards = ({ singleEstateData }) => {
                     <div className="flex gap-2 mb-2 mt-2 text-center">
                         {
                             // eslint-disable-next-line react/prop-types
-                            facilities.slice(0, 3).map(singleFacility => <p key={singleFacility} className="border border-[#E1B453] p-1 rounded-sm text-xs ">{singleFacility}</p>)
+                            facilities.slice(0, 3).map(singleFacility => <p key={singleFacility} className="border border-[#E1B453] p-1 rounded-sm text-[8px] md:text-[8px] lg:text-[9px]  ">{singleFacility}</p>)
                         }
                     </div>
                     <div className="card-actions w-full">
