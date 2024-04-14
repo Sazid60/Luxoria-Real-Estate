@@ -93,22 +93,24 @@ const Home = () => {
             </div>
 
             <div className="lg:px-28 mb-4">
-                <h1 className="text-center text-4xl font-semibold " data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Locate Properties</h1>
+                <h1 className="text-center text-4xl font-semibold mb-4 mt-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Locate Properties</h1>
                 <p className="text-center  max-w-sm lg:max-w-xl mx-auto mt-2 mb-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Find Us Nearby You and Start Your New Journey With Us</p>
-                <MapContainer className="h-[40vh]" center={[23.777176, 90.399452]} zoom={11} scrollWheelZoom={false}>
-                    <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    />
-                    {
-                        markers.map(marker => (
-                            <Marker key={marker.popup} position={marker.geoLocation} icon={customIcon}>
-                                <Popup>{marker.popup}</Popup>
-                            </Marker>
-                        ))
-                    }
+                <div data-aos="zoom-in" data-aos-duration="100" >
+                    <MapContainer className="h-[40vh] border-orange-300 border rounded-xl" center={[23.777176, 90.399452]} zoom={11} scrollWheelZoom={false}>
+                        <TileLayer
+                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        {
+                            markers.map(marker => (
+                                <Marker key={marker.popup} position={marker.geoLocation} icon={customIcon}>
+                                    <Popup>{marker.popup}</Popup>
+                                </Marker>
+                            ))
+                        }
 
-                </MapContainer>
+                    </MapContainer>
+                </div>
             </div>
 
             <>

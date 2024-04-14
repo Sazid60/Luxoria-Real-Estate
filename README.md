@@ -1,8 +1,26 @@
-# React + Vite
+# **LUXORIA**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Website URL:** [https://b9a9-sazid.web.app/](https://b9a9-sazid.web.app/)
 
-Currently, two official plugins are available:
+# Overview:
+Luxoria specializes in residential property renting and selling, offering a wide range of single-family homes, townhouses, apartments, student housing, senior living communities and vacation rentals.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features:
+
+- Engage in natural language conversations  for a variety of topics.
+- Engage in natural language conversations  for a variety of topics.
+- Engage in natural language conversations  for a variety of topics.
+- Engage in natural language conversations  for a variety of topics.
+- Engage in natural language conversations  for a variety of topics.
+- Engage in natural language conversations  for a variety of topics.
+
+## NPM Packages Used:
+
+1. **AOS-Package**: [https://michalsnik.github.io/aos/](#)
+   - Applied AOS in Every Pages of The Website.
+
+2. **Swiper-slider**: [https://swiperjs.com/](#)
+   - Applied In Home Page Banner Section.
+   
+3. **React-leaflet**: [https://react-leaflet.js.org/](#)
+   - Applied In Home Page Property Location Section.
