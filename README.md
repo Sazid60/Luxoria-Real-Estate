@@ -16,11 +16,6 @@ Luxoria specializes in residential property renting and selling, offering a wide
 
 ## NPM Packages Used:
 
-1. **AOS-Package**: [https://michalsnik.github.io/aos/](#)
-   - Applied AOS in Every Pages of The Website.
-
-2. **Swiper-slider**: [https://swiperjs.com/](#)
-   - Applied In Home Page Banner Section.
-   
-3. **React-leaflet**: [https://react-leaflet.js.org/](#)
-   - Applied In Home Page Property Location Section.
+1. [https://michalsnik.github.io/aos/](AOS-Package) : Applied AOS in Every Pages of The Website.
+2. [https://swiperjs.com/](Swiper-slider) : Applied In Home Page Banner Section.
+3. [https://react-leaflet.js.org/](React-leaflet) : Applied In Home Page Property Location Section.
