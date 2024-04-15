@@ -9,7 +9,7 @@ const Contact = () => {
             </Helmet>
             <div className="space-y-2 text-center mt-3 mb-2">
                 <h2 className=" font-bold leading-tight text-2xl md:text-2xl lg:text-3xl ">Let's talk!</h2>
-                <p className="text-xs md:text-lg lg:text-xl">Share Your Feedback With Us</p>
+                <p className="text-xs md:text-lg lg:text-lg">Share Your Feedback With Us</p>
             </div>
             <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8  mx-auto  rounded-lg md:grid-cols-2 justify-center items-center md:px-12 lg:px-16 xl:px-32 ">
                 <div className="flex flex-col justify-between" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">

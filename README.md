@@ -7,7 +7,7 @@ Luxoria specializes in residential property renting and selling, offering a wide
 
 ### Features & Characteristics:
 
-- **Home Page:** Contains Navbar, Banner, Properties Card, Property Locations, Reviews & Footer.
+- **Home Page:** Contains Navbar, Banner(AutoPlay Added), Properties Card, Property Locations, Reviews & Footer.
 
 - **Register Page:** Register with email, password, photo URL, or Google & GitHub. Validates Password (6 characters, 1 uppercase, 1 lowercase). Redirects post-registration to the desired or home page.
 

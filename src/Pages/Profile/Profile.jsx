@@ -37,17 +37,17 @@ const Profile = () => {
     };
 
     return (
-        <div className="w-full mt-3">
+        <div className="w-full mt-3 ">
             <Helmet>
                 <title>Profile</title>
             </Helmet>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center min-h-[40vh]">
                 <div className="flex justify-center items-center lg:justify-normal flex-col lg:w-[50%]">
                     <img src={user.photoURL} className="h-24 w-24 lg:h-24 lg:w-24 rounded-full" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320"/>
                     <h1 className="text-2xl font-bold mt-4"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"> {user.displayName.toUpperCase()}</h1>
                 </div>
                 <div className="w-full md:w-[70%]lg:w-[70%] bg-white">
-                    <h1 className="text-lg font-bold mt-6 ml-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="420">Want To Update Profile ?</h1>
+                    <h1 className="text-sm font-bold mt-6 ml-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="420">Want To Update Profile ?</h1>
                     <form className="p-3 w-full pb-2" onSubmit={handleSubmit} data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                         <div className="form-control" >
                             <label className="label">

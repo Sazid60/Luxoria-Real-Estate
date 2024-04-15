@@ -50,7 +50,7 @@ const Navbar = () => {
                     user ?
                         <div className="flex items-center gap-2 md:gap-2 lg:gap-4">
                             <div className="tooltip tooltip-left" data-tip={user.displayName}>
-                                <Link to={"/profile"}><img className="rounded-full h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9" src={user.photoURL || "/Capture.PNG"} alt="" /></Link>
+                                <Link to={"/profile"}><img className="rounded-full h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 border" src={user.photoURL || "/Capture.PNG"} alt="" /></Link>
                             </div>
                             <button className="btn btn-sm bg-[#E1B453] hover:bg-slate-500 text-white"
                                 onClick={handleSignOut}>Logout</button>
@@ -60,7 +60,7 @@ const Navbar = () => {
                         </div>
                         : <div className="flex items-center gap-2 md:gap-2 lg:gap-4">
                             <div className="tooltip tooltip-left" data-tip="No Image">
-                                <img className="rounded-full h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9" src="/Capture.PNG" alt="" />
+                                <img className="rounded-full h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 border" src="/Capture.PNG" alt="" />
                             </div>
                             <div className="flex">
                                 <NavLink

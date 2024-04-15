@@ -5,13 +5,13 @@ import { MdEmail } from "react-icons/md";
 
 const Agents = () => {
     return (
-        <section className="py-2 ">
+        <section className="py-2 min-h-[40vh]">
             <Helmet>
                 <title>Agents</title>
             </Helmet>
             <div className="container flex flex-col items-center justify-center mt-2 mx-auto">
                 <h1 className="text-center text-2xl md:text-2xl lg:text-3xl font-bold " data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Our Agents</h1>
-                <p className="text-center  text-xs md:text-lg lg:text-xl max-w-2xl mx-auto mt-2" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Find Your Dedicated Real Estate Agent Today and Start Your Journey Home</p>
+                <p className="text-center  text-xs md:text-lg lg:text-lg max-w-2xl mx-auto mt-2" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Find Your Dedicated Real Estate Agent Today and Start Your Journey Home</p>
                 <div className="flex flex-row flex-wrap-reverse justify-center mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" >
                     <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-gray-100 text-gray-800">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full bg-gray-500" src="/Agent-1.jpg" />

@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-import { Link, useNavigate,useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 import toast from 'react-hot-toast';
@@ -56,7 +56,7 @@ const Register = () => {
                     .then(() => {
 
                         // Since the profile is not updating instantly
-                        setUser({ displayName: name, photoURL: photoUrl })
+                        setUser({ displayName: name, photoURL: photoUrl, email:email })
 
                         toast.success('Registration Successful.');
                         setSuccess("Successfully Registered ")
@@ -94,7 +94,7 @@ const Register = () => {
             })
     }
     return (
-        <div className="w-full lg:mb-4 flex justify-center ">
+        <div className="w-full lg:mb-4 flex justify-center min-h-[40vh]">
             <Helmet>
                 <title>Register</title>
             </Helmet>
@@ -103,7 +103,7 @@ const Register = () => {
                 <div className="text-center">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2 " data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Register now!</h1>
                 </div>
-                <div className="card w-full lg:w-[40%] shadow-2xl bg-white"  data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400">
+                <div className="card w-full lg:w-[40%] shadow-2xl bg-white" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400">
                     <form className="card-body w-full pb-2" onSubmit={handleRegister} data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                         <div className="form-control">
                             <label className="label">
@@ -151,8 +151,8 @@ const Register = () => {
                     </form>
                     <div className="divider text-gray-700" >Continue With</div>
                     <div className="flex justify-center gap-4 lg:gap-7 mb-6 pb-0">
-                        <button className="btn rounded-full" onClick={() => handleSocialLogin(googleSignIn)}><FaGoogle className="text-xl text-[#DB4437]" />Google</button>
-                        <button className="btn rounded-full" onClick={() => handleSocialLogin(gitHubSignIn)}><FaGithub className="text-2xl bg-black text-white rounded-full border border-white" />Github</button>
+                        <button className="btn btn-sm rounded-full" onClick={() => handleSocialLogin(googleSignIn)}><FaGoogle className="text-xl text-[#DB4437]" />Google</button>
+                        <button className="btn btn-sm rounded-full" onClick={() => handleSocialLogin(gitHubSignIn)}><FaGithub className="text-2xl bg-black text-white rounded-full border border-white" />Github</button>
                     </div>
                 </div>
             </div>

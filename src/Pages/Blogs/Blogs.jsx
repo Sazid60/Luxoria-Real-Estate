@@ -2,15 +2,15 @@ import { Helmet } from "react-helmet-async";
 
 const Blogs = () => {
     return (
-        <div >
+        <div className="">
             <Helmet>
                 <title>Blogs</title>
             </Helmet>
             <h1 className="text-center text-2xl md:text-2xl lg:text-3xl  font-bold mt-3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Today's Blogs</h1>
-            <p className="text-center  text-xs md:text-lg lg:text-xl max-w-2xl mx-auto mt-2 mb-3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Explore Our Blog for Expert Advice and Real Estate Trends</p>
+            <p className="text-center  text-xs md:text-lg lg:text-lg max-w-2xl mx-auto mt-2 mb-3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Explore Our Blog for Expert Advice and Real Estate Trends</p>
 
-            <ul className="p-4 lg:p-8">
-                <li className="mb-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
+            <ul className="p-4 lg:p-8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
+                <li className="mb-2" >
                     <article className="border rounded-xl border-black border-opacity-30">
                         <a rel="noopener noreferrer" href="#" className="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:shadow-xl">
                             <h3 className=" lg:ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9 text-xl mb-2">Top 5 Tips for First-Time Homebuyers</h3>
@@ -19,7 +19,7 @@ const Blogs = () => {
                         </a>
                     </article>
                 </li>
-                <li className="mb-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
+                <li className="mb-2" >
                     <article className="border rounded-xl border-black border-opacity-30">
                         <a rel="noopener noreferrer" href="#" className="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:shadow-xl">
                             <h3 className="mb-2 lg:ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9 text-xl">The Impact of Remote Work on Housing Trends</h3>
@@ -28,7 +28,7 @@ const Blogs = () => {
                         </a>
                     </article>
                 </li>
-                <li className="mb-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
+                <li className="mb-2">
                     <article className="border rounded-xl border-black border-opacity-30">
                         <a rel="noopener noreferrer" href="#" className="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:shadow-xl">
                             <h3 className="mb-2 text-xl lg:ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">The Future of Sustainable Real Estate Development</h3>
@@ -37,7 +37,7 @@ const Blogs = () => {
                         </a>
                     </article>
                 </li>
-                <li className="mb-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900">
+                <li className="mb-2">
                     <article className="border rounded-xl border-black border-opacity-30">
                         <a rel="noopener noreferrer" href="#" className="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:shadow-xl">
                             <h3 className="mb-2 text-xl lg:ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">Navigating Rental Market Challenges in Urban Centers</h3>

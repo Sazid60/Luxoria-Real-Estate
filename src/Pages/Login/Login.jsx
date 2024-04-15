@@ -59,7 +59,7 @@ const Login = () => {
     }
 
     return (
-        <div className="lg:mb-4 flex justify-center ">
+        <div className="lg:mb-4 flex justify-center min-h-[40vh]">
             <Helmet>
                 <title>Login</title>
             </Helmet>

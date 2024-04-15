@@ -83,7 +83,7 @@ const Home = () => {
 
             <div>
                 <h1 className="text-center text-2xl md:text-2xl lg:text-3xl font-bold md:mt-4 mb-1 md:mb-2 lg:mb-4 mt-3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Properties</h1>
-                <p className="text-center text-xs md:text-lg lg:text-xl max-w-2xl mx-auto" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Explore our available properties and discover the perfect place to call home</p>
+                <p className="text-center text-xs md:text-lg lg:text-lg max-w-2xl mx-auto" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Explore our available properties and discover the perfect place to call home</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6 mt-4 lg:px-28">
                     {
                         estateData.map(singleEstateData => <EstateCards key={singleEstateData.id} singleEstateData={singleEstateData}></EstateCards>)
@@ -94,7 +94,7 @@ const Home = () => {
 
             <div className="lg:px-28 mb-4">
                 <h1 className="text-center text-2xl md:text-2xl lg:text-3xl font-bold md:mt-4 mb-1 md:mb-2 lg:mb-4 mt-3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Locate Properties</h1>
-                <p className="text-center text-xs md:text-lg lg:text-xl max-w-2xl mx-auto mt-2 mb-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Find Us Nearby You and Start Your New Journey With Us</p>
+                <p className="text-center text-xs md:text-lg lg:text-lg max-w-2xl mx-auto mt-2 mb-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Find Us Nearby You and Start Your New Journey With Us</p>
                 <div data-aos="zoom-in" data-aos-duration="100" >
                     <MapContainer className="h-[20vh] md:h-[25vh] lg:h-[40vh] border-orange-300 border rounded-xl" center={[23.777176, 90.399452]} zoom={11} scrollWheelZoom={false}>
                         <TileLayer
@@ -115,7 +115,7 @@ const Home = () => {
 
             <>
                 <h1 className="text-center text-2xl md:text-2xl lg:text-3xl font-bold md:mt-4 mb-1 md:mb-2 lg:mb-4 mt-3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Reviews</h1>
-                <p className="text-center text-xs md:text-lg lg:text-xl mx-auto" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Property reviews offer crucial insights, guiding buyers and renters toward informed decisions about their next home</p>
+                <p className="text-center text-xs md:text-lg lg:text-lg max-w-3xl mx-auto" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="520">Property reviews offer crucial insights, guiding buyers and renters toward informed decisions about their next home</p>
 
                 <div className="flex flex-col lg:flex-row gap-6 max-w-5xl mx-auto mb-6 mt-6" data-aos="zoom-in" data-aos-duration="100">
                     < div className="bg-white rounded-lg overflow-hidden shadow-md pb-2"  >
