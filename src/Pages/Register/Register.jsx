@@ -5,7 +5,6 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 import toast from 'react-hot-toast';
 import { Helmet } from "react-helmet-async";
-import { IoEyeOutline } from "react-icons/io5";
 
 const Register = () => {
 

@@ -23,7 +23,7 @@ Luxoria specializes in residential property renting and selling, offering a wide
 - **Update Profile Page:** When Logged in user can update Name & Photo URL information.(Private Route) 
 - **Property Details Page:** Clicking "View Property" of property card redirects to details  if logged in; else, to login. after login navigates to desired page.
 
-**Warning** : If you Login with google, No password is set. So if you try to login manually using the same email, and password it will show error, since password is not set and no option is given for password setting.
+- **Warning** : If you Login with google, No password is set. So if you try to login manually using the same email, and password it will show error, since password is not set and no option is given for password setting.
 
 ### NPM Packages Used:
 
