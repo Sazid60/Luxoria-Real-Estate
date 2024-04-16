@@ -9,10 +9,6 @@ const DetailEstate = () => {
 
     const [singleCard, setSingleCard] = useState({})
 
-
-
-    // console.log(estateData, id)
-
     useEffect(() => {
         if (id && estateData) {
             const singleItemObj = estateData.find(item => item.id === +id);
@@ -20,7 +16,7 @@ const DetailEstate = () => {
         }
     }, [id, estateData]);
 
-    // console.log(singleCard);
+
     const { image, estate_title, segment, description, price, status, area, location, facilities } = singleCard
 
     return (
