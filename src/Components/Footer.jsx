@@ -9,10 +9,10 @@ const Footer = () => {
             <div className="container mx-auto flex flex-col md:flex-row lg:flex-row justify-around px-6">
                 <div className="w-full md:w-1/2 lg:w-1/4 mb-6 md:mb-0">
                     <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-                    <p>Shahjalal Avenue</p>
+                    <p>Joshimoddin</p>
                     <p>Dhaka, Bangladesh</p>
                     <p>info@Luxoria.com</p>
-                    <p>555-123-4567</p>
+                    <p>+8801639768727</p>
                 </div>
                 <div className="w-full md:w-1/2 lg:w-1/4 mb-6 md:mb-0">
                     <h3 className="text-xl font-bold mb-4">Social Media</h3>
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
                 <div className="w-full md:w-1/2 lg:w-1/4">
                     <h3 className="text-xl font-bold mb-4">Newsletter</h3>
-                    <p>Subscribe us for the latest updates.</p>
+                    <p>Subscribe us for updates.</p>
                     <form className="mt-4 flex">
                         <input type="email" placeholder="Enter your email" className="w-full  border-gray-700 rounded-l-md py-2 px-3 text-sm text-gray-300 focus:outline-none focus:border-gray-500" />
                         <Link to={"/blogs"}>                       
