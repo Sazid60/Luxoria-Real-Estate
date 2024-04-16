@@ -13,7 +13,7 @@ Luxoria specializes in residential property renting and selling, offering a wide
 
 - **Login Page:** Login with email, password or Google & GitHub. Redirects to the desired or home page. Allows navigation to Agents, Update Profile, and Property Details (Private Routes) after Login.
 
-- **Navbar:** Navbar has Navlinks to navigate through pages. Displays User image & functional Logout button when logged in; otherwise, displays default blank user image, login, and register button.
+- **Navbar:** Navbar has active routes to navigate through pages. Displays User image & functional Logout button when logged in; otherwise, displays default blank user image, login, and register button.
 
 - **Blogs Page:** Recent Blogs on Properties.
 - **Contact Page:** Inquiry Form (non-dynamic) and FAQs. 

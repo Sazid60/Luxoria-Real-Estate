@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { useContext, useState } from "react";
 import toast from 'react-hot-toast';
@@ -9,13 +9,10 @@ const Profile = () => {
     const [success, setSuccess] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
 
-    // State variables to hold user information
     const [name, setName] = useState(user.displayName);
     const [email, setEmail] = useState(user.email);
     const [photoUrl, setPhotoUrl] = useState(user.photoURL);
-    // const navigate = useNavigate()
 
-    // Function to handle form submission
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(name, photoUrl)
