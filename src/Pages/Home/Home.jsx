@@ -5,20 +5,16 @@ import EstateCards from "../../Components/EstateCards/EstateCards";
 import { useLoaderData } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
-import { IoIosArrowDown } from "react-icons/io";
-import { useEffect, useState } from "react";
-import { Icon } from 'leaflet'; // Import Icon from Leaflet
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; // You can also use <link> for styles
-// // ..
-// AOS.init();
+
+import { Icon } from 'leaflet'; 
 
 
-import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
+
+import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
 import "leaflet/dist/leaflet.css"
 
 const Home = () => {
-    const [loaded, setLoaded] = useState(false)
+
     const estateData = useLoaderData()
     // console.log(estateData)
 
@@ -26,44 +22,36 @@ const Home = () => {
 
     // Define a custom icon
     const customIcon = new Icon({
-        iconUrl: '/Location.png', // Provide the path to your icon image
-        iconSize: [40, 65], // Size of the icon
+        iconUrl: '/Location.png', 
+        iconSize: [40, 65], 
     });
     const markers = [
         {
-            geoLocation: [23.797911, 90.414391], // Majestic Manor
+            geoLocation: [23.797911, 90.414391], 
             popup: "Majestic Manor"
         },
         {
-            geoLocation: [23.7937, 90.4047], // Elegant Terrace Residence
+            geoLocation: [23.7937, 90.4047], 
             popup: "Elegant Terrace Residence"
         },
         {
-            geoLocation: [23.7461, 90.3742], // Prestigious Sky Residence
+            geoLocation: [23.7461, 90.3742],
             popup: "Prestigious Sky Residence"
         },
         {
-            geoLocation: [23.8759, 90.3901], // Premier Student Sanctuary
+            geoLocation: [23.8759, 90.3901], 
             popup: "Premier Student Sanctuary"
         },
         {
-            geoLocation: [23.8223, 90.3795], // Tranquil Eldercare Retreat
+            geoLocation: [23.8223, 90.3795], 
             popup: "Tranquil Eldercare Retreat"
         },
         {
-            geoLocation: [21.4272, 92.0058], // Exclusive Beachfront Villa
+            geoLocation: [21.4272, 92.0058], 
             popup: "Exclusive Beachfront Villa"
         }
     ];
 
-
-    // useEffect(() => {
-    //     const timer = setTimeout(() => {
-    //         setLoaded(true);
-    //     }, 3500);
-
-    //     return () => clearTimeout(timer);
-    // }, []);
 
     return (
         <div className="mt-4">
@@ -74,12 +62,6 @@ const Home = () => {
             <Banner></Banner>
             <BottomBanner></BottomBanner>
 
-            {/* {!loaded && (
-                <div className="text-center"  >
-                    <p className="text-sm">Scroll Down</p>
-                    <p className="text-3xl flex justify-center text-yellow-400"><IoIosArrowDown /></p>
-                </div>
-            )} */}
 
             <div>
                 <h1 className="text-center text-2xl md:text-2xl lg:text-3xl font-bold md:mt-4 mb-1 md:mb-2 lg:mb-4 mt-3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="320">Properties</h1>
@@ -138,7 +120,7 @@ const Home = () => {
                         </div>
                         <div className="px-4 py-2">
                             <p className="text-xs md:text-sm lg:text-sm text-gray-600 italic">
-                                <span className="quotes text-base">&quot;</span>We are thrilled with our new apartment! The process of buying it was smooth, and the real estate agents were very helpful. The apartment itself is spacious and beautifully designed. We couldn't be happier.<span className="quotes text-base">&quot;</span>
+                                <span className="quotes text-base">&quot;</span>We are thrilled with our new apartment! The process of buying it was smooth, and the real estate agents were very helpful. The apartment itself is spacious and beautifully designed. We could not be happier.<span className="quotes text-base">&quot;</span>
                             </p>
                         </div>
                     </div>

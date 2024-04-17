@@ -1,8 +1,6 @@
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -21,7 +19,6 @@ const Banner = () => {
                     <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                     <TypeAnimation className='text-white text-sm  md:text-xl lg:text-4xl font-semibold'  
                         sequence={['Single-Family-Homes', 3000, ' Town-Houses', 3000, 'Apartments', 3000, 'Student-Housing', 3000, 'Senior-Living-Communities', 3000, 'Vacation-Rentals', 3000]}
-                        // style={{ fontSize: '2em', fontWeight:700, color:"white" }}
                         repeat={Infinity}
                     />
                     </div>
