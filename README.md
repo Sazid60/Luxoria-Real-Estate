@@ -37,6 +37,8 @@ Luxoria specializes in residential property renting and selling, offering a wide
 6. [React-loader-spinner](https://www.npmjs.com/package/react-loader-spinner) : Applied in every loading state.
 7. [react-type-animation](https://www.npmjs.com/package/react-type-animation) : Applied In Banner section.
 
+### Technologies used : 
+React.js | HTML5 | Tailwind CSS | Daisy UI | Aos Aninmation |
 
   ### Instructiosn For Locally Running The Project :
 - Clone The Repository " git clone <repository-url> "
