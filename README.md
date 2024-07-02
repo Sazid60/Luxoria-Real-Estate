@@ -38,5 +38,14 @@ Luxoria specializes in residential property renting and selling, offering a wide
 7. [react-type-animation](https://www.npmjs.com/package/react-type-animation) : Applied In Banner section.
 
 
+  ### Instructiosn For Locally Running The Project :
+- Clone The Repository " git clone <repository-url> "
+- Install All The Dependecies " npm intall "
+- Create a .env file in the root directory of the project and add the required fields.
+- Customize .env variables according to your specific environment setup.
+- Ensure Node.js and npm (or yarn) are installed on your system.
+- For Further Guidence You Can Connect me and ask any queries.
+
+
 
 
